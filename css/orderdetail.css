@@ -4,10 +4,29 @@
 .slideBox .dots{bottom: 5px;}
 
 /*团购信息*/
-.infomation{padding: 0 10px;}
+.infomation{padding: 0 10px; font-size: 12px;}
 .title{min-width: 290px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 15px; font-weight: bold;}
-.describe{max-height: 36px; line-height: 18px; overflow: hidden; font-size: 11px; color: #999;}
-.freight{font-size: 12px; color: #555;}
-.sold{font-size: 12px; color: #555; text-align: right;}
+/*商品描述*/
+.describe{margin-top: 5px; max-height: 36px; line-height: 18px; overflow: hidden; font-size: 11px; color: #999;}
+/*状态*/
+.state{margin-top: 5px;}
+.state .freight{color: #555;}
+.state .sold{color: #555; text-align: right;}
+/*购买按钮*/
+.btn_buy{display: inline-block; margin-top: 10px; width: 100%; height: 45px; line-height: 45px; text-align: center; color: #fff; border: 1px solid #ff5600; border-radius: 4px;}
+.btn_buy.group_btn{background-color: #ff5600;}
+.btn_buy.person_btn{color: #ff5600;}
+.btn_buy .bold{font-size: 18px;}
+
+
+
+
+
+
+
+
+
+
+
 
 
