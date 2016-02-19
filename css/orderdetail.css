@@ -1,0 +1,13 @@
+/*海报*/
+.slideBox{margin: 15px;}
+.slideBox .dots li{width: 10px;height: 10px;}
+.slideBox .dots{bottom: 5px;}
+
+/*团购信息*/
+.infomation{padding: 0 10px;}
+.title{min-width: 290px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 15px; font-weight: bold;}
+.describe{max-height: 36px; line-height: 18px; overflow: hidden; font-size: 11px; color: #999;}
+.freight{font-size: 12px; color: #555;}
+.sold{font-size: 12px; color: #555; text-align: right;}
+
+

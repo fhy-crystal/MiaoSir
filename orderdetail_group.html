@@ -1,0 +1,97 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>喵舍尝鲜馆</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="./css/normalize3.0.2.css">
+    <link rel="stylesheet" type="text/css" href="./css/public.css">
+    <link rel="stylesheet" type="text/css" href="./css/orderdetail.css">
+</head>
+<body>
+    <div class="container">
+        <div class="layout_750">
+            <!-- 海报 -->
+            <div class="row">
+                <div class="col-xs-12 no_padding_left no_padding_right">
+                    <div id="slideBox" class="slideBox">
+                        <div class="banner">
+                            <ul>
+                                <li>
+                                    <a class="pic" href="#"><img src="./img/orderdetail1.png" /></a>
+                                </li>
+                                <li>
+                                    <a class="pic" href="#"><img src="./img/orderdetail2.png"/></a>
+                                </li>
+                                <li>
+                                    <a class="pic" href="#"><img src="./img/orderdetail1.png"/></a>  
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dots">
+                            <ul></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /海报 -->
+
+            <!-- 团购信息 -->
+            <div class="infomation">
+                <!-- 标题 -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="title">我是标题我是标题我是标题</div>
+                    </div>
+                </div>
+                <!-- /标题 -->
+
+                <!-- 商品描述 -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="describe">我是简介我是简介我是简介我是简介</div>
+                    </div>
+                </div>
+                <!-- /商品描述 -->
+
+                <!-- 状态 -->
+                <div class="row">
+                    <div class="state">
+                        <div class="col-xs-6">
+                            <div class="freight">运费：包邮</div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="sold">已售：168件</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /状态 -->
+
+            </div>
+            <!-- /团购信息 -->
+        </div>
+    </div>
+    <script src="./js/jquery.min-2.1.3.js"></script>
+    <script src="./js/TouchSlide.1.1.js"></script>
+    <script type="text/javascript">
+        //banner轮播
+        TouchSlide({ 
+            slideCell:"#slideBox",
+            titCell:".dots ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+            mainCell:".banner ul", 
+            effect:"leftLoop", 
+            autoPage:true,//自动分页
+            autoPlay:true //自动播放
+        });
+    </script>
+</body>
+</html>
