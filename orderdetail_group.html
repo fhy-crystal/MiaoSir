@@ -18,87 +18,115 @@
     <link rel="stylesheet" type="text/css" href="./css/orderdetail.css">
 </head>
 <body>
-    <div class="container">
-        <div class="layout_750">
-            <!-- 海报 -->
-            <div class="row">
-                <div class="col-xs-12 no_padding_left no_padding_right">
-                    <div id="slideBox" class="slideBox">
-                        <div class="banner">
-                            <ul>
-                                <li>
-                                    <a class="pic" href="#"><img src="./img/orderdetail1.png" /></a>
-                                </li>
-                                <li>
-                                    <a class="pic" href="#"><img src="./img/orderdetail2.png"/></a>
-                                </li>
-                                <li>
-                                    <a class="pic" href="#"><img src="./img/orderdetail1.png"/></a>  
-                                </li>
-                            </ul>
+    <div class="bg_white">
+        <div class="container">
+            <div class="layout_750">
+                <!-- 海报 -->
+                <div class="row">
+                    <div class="col-xs-12 no_padding_left no_padding_right">
+                        <div id="slideBox" class="slideBox">
+                            <div class="banner">
+                                <ul>
+                                    <li>
+                                        <a class="pic" href="#"><img src="./img/orderdetail1.png" /></a>
+                                    </li>
+                                    <li>
+                                        <a class="pic" href="#"><img src="./img/orderdetail2.png"/></a>
+                                    </li>
+                                    <li>
+                                        <a class="pic" href="#"><img src="./img/orderdetail1.png"/></a>  
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dots">
+                                <ul></ul>
+                            </div>
                         </div>
-                        <div class="dots">
-                            <ul></ul>
+                    </div>
+                </div>
+                <!-- /海报 -->
+
+                <!-- 团购信息 -->
+                <div class="infomation">
+                    <!-- 标题 -->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="title">我是标题我是标题我是标题</div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- /海报 -->
+                    <!-- /标题 -->
 
-            <!-- 团购信息 -->
-            <div class="infomation">
-                <!-- 标题 -->
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="title">我是标题我是标题我是标题</div>
+                    <!-- 商品描述 -->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="describe">我是简介我是简介我是简介我是简介</div>
+                        </div>
                     </div>
-                </div>
-                <!-- /标题 -->
+                    <!-- /商品描述 -->
 
-                <!-- 商品描述 -->
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="describe">我是简介我是简介我是简介我是简介</div>
+                    <!-- 状态 -->
+                    <div class="row">
+                        <div class="state">
+                            <div class="col-xs-6">
+                                <div class="freight">运费：包邮</div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="sold">已售：168件</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!-- /商品描述 -->
+                    <!-- /状态 -->
 
-                <!-- 状态 -->
-                <div class="row">
-                    <div class="state">
+                    <!-- 购买按钮 -->
+                    <div class="row">
                         <div class="col-xs-6">
-                            <div class="freight">运费：包邮</div>
+                            <a class="btn_buy group_btn">
+                                <span class="bold">18.7</span>元/4人团
+                            </a>
                         </div>
                         <div class="col-xs-6">
-                            <div class="sold">已售：168件</div>
+                            <a class="btn_buy person_btn">
+                                <span class="bold">48.8</span>元/单独购买
+                            </a>
                         </div>
                     </div>
-                </div>
-                <!-- /状态 -->
+                    <!-- /购买按钮 -->
 
-                <!-- 购买按钮 -->
-                <div class="row">
-                    <div class="col-xs-6">
-                        <a class="btn_buy group_btn">
-                            <span class="bold">18.7</span>元/4人团
-                        </a>
+                    <!-- 购买说明 -->
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <div class="ex_buy">
+                                支付开团并邀请3人参团，人数不足自动退款，详见下方拼团玩法
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xs-6">
-                        <a class="btn_buy person_btn">
-                            <span class="bold">48.8</span>元/单独购买
-                        </a>
+                    <!-- /购买说明 -->
+
+                    <!-- 发货说明 -->
+                    <div class="row">
+                        <div class="col-xs-9">
+                            <div class="ex_deliver">
+                                <div>配送区域：江浙沪地区</div>
+                                <div>发货时间：15:00之前的订单当天发货<br/><span class="mleft_60">15:00之后的订单次日发货</span></div>
+                            </div>
+                        </div>
                     </div>
+                    <!-- /发货说明 -->
                 </div>
-                <!-- /购买按钮 -->
-
-                <!-- 购买说明 -->
-                <div class="row"></div>
-                <!-- /购买说明 -->
-
+                <!-- /团购信息 -->
             </div>
-            <!-- /团购信息 -->
         </div>
     </div>
+    <!-- 查看详情 -->
+    <div class="more">
+        <a>查看详情<span class="arrow">&gt;</span></a>
+    </div>
+    <!-- /查看详情 -->
+    <!-- 查看更多团购 -->
+    <div class="more_group">
+        <a>查看更多尝鲜团&gt;</a>
+    </div>
+    <!-- /查看更多团购 -->
     <script src="./js/jquery.min-2.1.3.js"></script>
     <script src="./js/TouchSlide.1.1.js"></script>
     <script type="text/javascript">

@@ -7,6 +7,8 @@ html,body{background-color: #e8e8eb;}
 .no_padding_left{padding-left: 0;}
 .no_padding_right{padding-right: 0;}
 .center{text-align: center;}
+.mleft_60{margin-left: 60px;}
+.bg_white{width: 100%; background-color: #fff;}
 .icon{display: inline-block; background: url(../img/sprite.png) no-repeat center;background-size: 250px 250px;}
 .pro_title{min-width: 80px;overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 14px; color: #555;}
 .pro_describe{min-width: 70px;overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 9px;}

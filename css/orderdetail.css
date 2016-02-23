@@ -1,3 +1,4 @@
+.container{background-color: #fff;}
 /*海报*/
 .slideBox{margin: 15px;}
 .slideBox .dots li{width: 10px;height: 10px;}
@@ -9,23 +10,22 @@
 /*商品描述*/
 .describe{margin-top: 5px; max-height: 36px; line-height: 18px; overflow: hidden; font-size: 11px; color: #999;}
 /*状态*/
-.state{margin-top: 5px;}
-.state .freight{color: #555;}
-.state .sold{color: #555; text-align: right;}
+.state{margin-top: 5px; color: #555;}
+.state .sold{text-align: right;}
 /*购买按钮*/
-.btn_buy{display: inline-block; margin-top: 10px; width: 100%; height: 45px; line-height: 45px; text-align: center; color: #fff; border: 1px solid #ff5600; border-radius: 4px;}
+.btn_buy{display: inline-block; margin: 10px 0; width: 100%; height: 45px; line-height: 45px; text-align: center; color: #fff; border: 1px solid #ff5600; border-radius: 4px;}
 .btn_buy.group_btn{background-color: #ff5600;}
 .btn_buy.person_btn{color: #ff5600;}
 .btn_buy .bold{font-size: 18px;}
-
-
-
-
-
-
-
-
-
+/*购买说明*/
+.ex_buy{color: #555;}
+/*发货说明*/
+.ex_deliver{margin: 15px 0; color: #999;}
+/*查看详情*/
+.more{margin: 5px 0 65px 0; padding: 10px 15px; font-size: 15px; color: #333; background-color: #fff;}
+.more .arrow{float: right;}
+/*查看更多团购*/
+.more_group{position: fixed; bottom: 0; padding: 20px 0; width: 100%; text-align: center; font-size: 15px; color: #ff5600; background-color: #fff; border-top: 1px solid #f3f3f3;}
 
 
 
