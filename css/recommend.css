@@ -1,4 +1,7 @@
-.rec_pro{margin-top: 2%; padding: 5px; position: relative; background-color: #fff;}
+.rec_pro{margin-top: 2%; padding: 1%; position: relative; background-color: #fff;}
 .rec_pro img{width: 100%;}
-.rec_pro .tip{position: absolute; top: 14px; left: -13px; background-position: 0 -72px; width: 76px; height: 21px; line-height: 21px; text-align: center; font-size: 6px; color: #fff; transform: rotate(-45deg);}
-
+.rec_pro .soldout{position: absolute; width: 98%;}
+.rec_pro .tip{position: absolute; top: 12px; left: -15px; background-position: 0 -72px; width: 76px; height: 21px; line-height: 21px; text-align: center; font-size: 6px; color: #fff; transform: rotate(-45deg);}
+@media screen and (min-width:720px) {
+	.rec_pro .tip{position: absolute; top: 26px; left: -30px; background-size: 500px 500px; background-position: 0 -144px;  width: 152px; height: 42px; line-height: 42px; font-size: 20px;}
+}
