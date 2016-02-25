@@ -5,14 +5,13 @@
 .slideBox .dots{bottom: 5px;}
 
 /*团购信息*/
-.infomation{padding: 0 10px; font-size: 12px;}
+.infomation{padding: 0 10px;}
 .title{min-width: 290px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 15px; font-weight: bold;}
 /*商品描述*/
-.describe{margin-top: 5px; max-height: 36px; line-height: 18px; overflow: hidden; font-size: 11px; color: #999;}
+.describe{margin-top: 5px; max-height: 36px; line-height: 18px; overflow: hidden; color: #999;}
 /*状态*/
-.state{margin-top: 5px; color: #555;}
-.state .sold{text-align: right;}
-/*价格*/
+.state{margin-top: 5px; padding: 0 5px; color: #555;}
+.state .sold{float: right;}
 .price{margin-top: 5px; color: #ff5600;}
 .price .bold{font-size: 18px;}
 /*购买按钮*/
@@ -21,9 +20,8 @@
 .btn_buy.single_btn{font-size: 18px; background-color: #ff5600;}
 .btn_buy.person_btn{color: #ff5600;}
 .btn_buy .bold{font-size: 18px;}
-/*购买说明*/
+/*说明*/
 .ex_buy{color: #555;}
-/*发货说明*/
 .ex_deliver{margin: 15px 0; color: #999;}
 /*查看详情*/
 .more{margin: 5px 0 65px 0; padding: 10px 15px; font-size: 15px; color: #333; background-color: #fff;}
@@ -31,6 +29,27 @@
 /*查看更多团购*/
 .more_group{position: fixed; bottom: 0; padding: 20px 0; width: 100%; text-align: center; font-size: 15px; color: #ff5600; background-color: #fff; border-top: 1px solid #f3f3f3;}
 
+@media screen and (min-width: 720px) {
+	/*团购信息*/
+	.title{font-size: 21px;}
+	/*商品描述*/
+	.describe{max-height: 50px; line-height: 25px; overflow: hidden; font-size: 18px;}
+	/*状态*/
+	.state{font-size: 18px;}
+	.price .bold{font-size: 24px;}
+	/*购买按钮*/
+	.btn_buy{font-size: 18px;}
+	.btn_buy.single_btn{font-size: 24px;}
+	.btn_buy .bold{font-size: 24px;}
+	/*说明*/
+	.ex_buy{font-size: 18px;}
+	.ex_deliver{font-size: 18px;}
+	/*查看详情*/
+	.more{font-size: 21px;}
+	.mleft_60{margin-left: 90px;}
 
+	/*查看更多团购*/
+	.more_group{font-size: 21px;}
 
+}
 
