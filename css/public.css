@@ -1,4 +1,4 @@
-html,body{background-color: #e8e8eb;}
+html,body{background-color: #e8e8eb; font-size: 12px;}
 .layout_750{margin: 0 auto; max-width: 750px;}
 .relative{position: relative;}
 .fl{float: left;}
@@ -11,11 +11,11 @@ html,body{background-color: #e8e8eb;}
 .bg_white{width: 100%; background-color: #fff;}
 .icon{display: inline-block; background: url(../img/sprite.png) no-repeat center;background-size: 250px 250px;}
 .pro_title{min-width: 80px;overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 14px; color: #555;}
-.pro_describe{min-width: 70px;overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 9px;}
+.pro_describe{min-width: 70px;overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 .pro_img img{width: 100%;}
 .price{min-width: 80px;overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 13px;}
-.price .price_decimal{font-size: 10px;}
-.price .price_unit{font-size: 10px; color: #999;}
+.price .price_decimal{font-size: 12px;}
+.price .price_unit{font-size: 12px; color: #999;}
 .yellow{color: #f8bf00;}
 .orange{color: #ff5600;}
 .green{color: #10bd00;}
@@ -38,19 +38,26 @@ a:hover, a:focus{text-decoration: none;}
 /*导航条*/
 .tab{padding: 0 5%; width: 100%; position: fixed;left: 50%; bottom: 0;-webkit-transform: translate(-50%, 0); height: 48px; border-top: 1px solid #eee;background-color: #fff;}
 .tab_item{margin-top: 3px; display: inline-block; width: 100%;}
-.icon_home{background-position: 0 -27px;width: 26px; height: 25px;}
-.icon_group{background-position: -41px -27px;width: 26px; height: 25px;}
-.icon_order{background-position: -82px -27px;width: 26px; height: 25px;}
-.icon_mine{background-position: -126px -27px;width: 26px; height: 25px;}
-.icon_txt{margin-top: -5px; font-size: 9px; color: #999;}
+.icon_home{background-position: 0 -27px; width: 26px; height: 25px;}
+.icon_group{background-position: -41px -27px; width: 26px; height: 25px;}
+.icon_order{background-position: -82px -27px; width: 26px; height: 25px;}
+.icon_mine{background-position: -126px -27px; width: 26px; height: 25px;}
+.icon_txt{margin-top: -5px; color: #999;}
 .active .icon_txt{color: #3bc02f;}
 .active .icon_home{background-position: 0 0;}
 .active .icon_group{background-position: -41px 0;}
 .active .icon_order{background-position: -82px 0;}
 .active .icon_mine{background-position: -126px 0;}
 
+@media screen and (min-width: 720px) {
+	.icon{background-size: 500px 500px;}
+	.pro_title{font-size: 20px;}
+	.pro_describe{font-size: 18px;}
+	.price{font-size: 19px;}
+	.price .price_decimal{font-size: 18px;}
+	.price .price_unit{font-size: 18px;}
 
-
-
-
-
+	.icon_home{background-size: 250px 250px;}
+	.icon_group{background-size: 250px 250px;}
+	.icon_order{background-size: 250px 250px;}
+	.icon_mine{background-size: 250px 250px;}
