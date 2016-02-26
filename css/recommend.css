@@ -1,14 +1,13 @@
 .rec_pro{margin: 2% 0; padding: 1%; position: relative; background-color: #fff;}
-.rec_pro:last-child{margin-bottom: 60px;}
 /*精品推荐图片*/
 .rec_pro img{width: 100%;}
-.rec_pro .soldout{position: absolute; width: 98%;}
-.rec_pro .tip{position: absolute; top: 12px; left: -15px; width: 76px; height: 21px; line-height: 21px; text-align: center; font-size: 12px; color: #fff; transform: rotate(-45deg);}
+.rec_pro .soldout{position: absolute; width: 98%; z-index: 3;}
+.rec_pro .tip{position: absolute; top: 12px; left: -15px; z-index: 5; width: 76px; height: 21px; line-height: 21px; text-align: center; font-size: 12px; color: #fff; transform: rotate(-45deg);}
 .rec_pro .new_tip{background-position: 0 -72px;}
 .rec_pro .hot_tip{background-position: 0 -103px;}
 /*精品推荐描述*/
 .rec_pro .describe{padding: 5px;}
-.rec_pro .describe .title{margin-bottom: 10px; font-size: 14px; font-weight: bold;}
+.rec_pro .describe .title{margin-bottom: 10px; font-size: 14px; font-weight: bold; color: #000;}
 .rec_pro .describe .title .title_tip{margin-right: 5px; padding: 2px 5px; font-size: 12px; font-weight: normal; color: #fff; border-radius: 3px;}
 .rec_pro .describe .title .group{background-color: #ff5600;}
 .rec_pro .describe .title .presell{background-color: #ffb400;}
@@ -28,10 +27,12 @@
 	.rec_pro .new_tip{background-position: 0 -144px;}
 	.rec_pro .hot_tip{background-position: 0 -206px;}
 	
-	/*价格及已售数量*/
+	/*精品推荐描述*/
 	.rec_pro .describe{font-size: 18px;}
 	.rec_pro .describe .title{font-size: 20px;}
 	.rec_pro .describe .title .title_tip{font-size: 18px;}
 	.rec_pro .describe .detail{max-height: 50px; line-height: 25px;}
+
+	/*价格及已售数量*/
 	.rec_pro .describe .state .price_num{font-size: 20px;}
 }
