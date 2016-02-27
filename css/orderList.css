@@ -1,15 +1,19 @@
 /*首部导航*/
-.top_nav{ width: 100%; }
-.top_nav .item{ float: left; width: 25%; height: 50px; line-height: 50px; text-align: center; font-size: 14px; background-color: #fff; }
+.top_nav{width: 100%;}
+.top_nav .item{float: left; width: 25%; height: 50px; line-height: 50px; text-align: center; font-size: 14px; background-color: #fff; cursor: pointer;}
 .top_nav .item.active{color: #ff5600; border-bottom: 2px solid #ff5600;}
 
-
-
-
-
-
-
-
-
-
-
+.con_item{margin-top: 15px; background-color: #fff;}
+.con_item .item .top{padding: 13px 10px;}
+.con_item .item .top .time{font-size: 13px; color: #afafaf;}
+.con_item .item .top .state{float: right; font-size: 14px; color: #ff5600;}
+.con_item .item .middle{padding: 15px 10px; border-top: 1px solid #eee; border-bottom: 1px solid #eee;}
+.con_item .item .middle .image{position: absolute; width: 85px; height: 85px;}
+.con_item .item .middle .image img{width: 100%;}
+.con_item .item .middle .right_con{margin-left: 95px;}
+.con_item .item .middle .right_con .title{margin-bottom: 10px; font-size: 13px; max-height: 36px; overflow: hidden; color: #555;}
+.con_item .item .middle .right_con .sec_middle{margin-bottom: 7px; height: 17px; color: #999;}
+.con_item .item .middle .right_con .sec_middle .unit_price{float: right;}
+.con_item .item .bottom{padding: 10px; font-size: 14px;}
+.con_item .item .bottom .button{float: right; display: inline-block; padding: 7px 15px; color: #ff5600; border: 1px solid #ff5600; border-radius: 5px;}
+.con_item .item .bottom .button:first-child{margin-left: 10px;}
