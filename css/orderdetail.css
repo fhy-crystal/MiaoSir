@@ -40,7 +40,7 @@
 .more_group .back_home{position: absolute; left: 0; display: inline-block; padding: 20px 0; width: 20%; background-color: #fff;}
 .more_group .find_more{margin-left: 20%; display: inline-block; padding: 20px 0; width: 80%; color: #ff5600; background-color: #eee;}
 
-@media screen and (min-width: 720px) {
+@media (min-width: 720px) {
 	/*团购信息*/
 	.title{font-size: 21px;}
 

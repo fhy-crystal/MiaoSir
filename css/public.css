@@ -50,7 +50,7 @@ a:hover, a:focus{text-decoration: none;}
 .active .icon_order{background-position: -82px 0;}
 .active .icon_mine{background-position: -126px 0;}
 
-@media screen and (min-width: 720px) {
+@media (min-width: 720px) {
 	.icon{background-size: 500px 500px;}
 	.pro_title{font-size: 20px;}
 	.pro_describe{font-size: 18px;}
