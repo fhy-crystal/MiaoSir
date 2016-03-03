@@ -26,15 +26,6 @@
 /*查看详情*/
 .more{margin: 5px 0; padding: 10px 15px; font-size: 15px; color: #333; background-color: #fff;}
 .more .arrow{float: right;}
-/*拼团玩法*/
-.explain{margin-bottom: 65px; padding: 10px 15px; font-size: 15px; color: #333; background-color: #fff;}
-.explain .arrow{float: right;}
-.explain ul{margin: 25px 0;}
-.explain .item{float: left; position: relative; width: 25%; text-align: left; color: #a1a1a1; font-size: 12px;}
-.explain .item span{margin-left: 25px; display: inline-block; width: 50px; line-height: 14px;}
-.explain .item .num{position: absolute; top: 5px; margin-right: 5px; display: inline-block; width: 20px; height: 20px; line-height: 18px; text-align: center; font-style: normal; color: #a1a1a1; background-color: #fff; border: 1px solid #a1a1a1; border-radius: 100%;}
-.explain .item.active{color: #ff5600;}
-.explain .item.active .num{color: #fff; background-color: #ff5600; border: 0;}
 /*查看更多团购*/
 .more_group{position: fixed; bottom: 0; width: 100%; text-align: center; font-size: 15px; border-top: 1px solid #f3f3f3;}
 .more_group .back_home{position: absolute; left: 0; display: inline-block; padding: 20px 0; width: 20%; background-color: #fff;}
@@ -63,12 +54,6 @@
 	/*查看详情*/
 	.more{font-size: 21px;}
 	.mleft_60{margin-left: 90px;}
-
-	/*拼团玩法*/
-	.explain{font-size: 21px;}
-	.explain .item{font-size: 18px;}
-	.explain .item span{margin-left: 50px; width: 100px; line-height: 20px;}
-	.explain .item .num{top: 0; width: 40px; height: 40px; line-height: 40px;}
 
 	/*查看更多团购*/
 	.more_group{font-size: 21px;}

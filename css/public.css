@@ -50,6 +50,18 @@ a:hover, a:focus{text-decoration: none;}
 .active .icon_order{background-position: -82px 0;}
 .active .icon_mine{background-position: -126px 0;}
 
+/*拼团玩法*/
+.pro_explain{padding: 10px 15px; font-size: 15px; color: #333; background-color: #fff;}
+.pro_explain .arrow{float: right;}
+.pro_explain ul{margin: 25px 0;}
+.pro_explain .item{float: left; position: relative; width: 25%; text-align: left; color: #a1a1a1; font-size: 12px;}
+.pro_explain .item span{margin-left: 25px; display: inline-block; width: 50px; line-height: 14px;}
+.pro_explain .item .num{position: absolute; top: 5px; margin-right: 5px; display: inline-block; width: 20px; height: 20px; line-height: 18px; text-align: center; font-style: normal; color: #a1a1a1; background-color: #fff; border: 1px solid #a1a1a1; border-radius: 100%;}
+.pro_explain .item.active{color: #ff5600;}
+.pro_explain .item.active .num{color: #fff; background-color: #ff5600; border: 0;}
+
+
+/*平板等大屏*/
 @media (min-width: 720px) {
 	.icon{background-size: 500px 500px;}
 	.pro_title{font-size: 20px;}
@@ -62,3 +74,10 @@ a:hover, a:focus{text-decoration: none;}
 	.icon_group{background-size: 250px 250px;}
 	.icon_order{background-size: 250px 250px;}
 	.icon_mine{background-size: 250px 250px;}
+
+	/*拼团玩法*/
+	.pro_explain{font-size: 21px;}
+	.pro_explain .item{font-size: 18px;}
+	.pro_explain .item span{margin-left: 50px; width: 100px; line-height: 20px;}
+	.pro_explain .item .num{top: 0; width: 40px; height: 40px; line-height: 40px;}
+}
