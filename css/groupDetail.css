@@ -15,11 +15,16 @@
 .pro .right_con .sec_bottom .price .bold{font-size: 15px; color: #ff5600;}
 
 /*图购人列表*/
-.player{padding: 20px; background-color: #fff;}
+.player{padding: 20px; background-color: #fff; border-bottom: 1px solid #eee;}
 .player .player_head{float: left; margin: 0 2.5%; width: 15%;}
 .player .player_head img{width: 100%; border-radius: 100%;}
+.player .player_head:first-child img{border: 1px solid #ff5600;}
 .player .statistics{margin: 15px 0 10px; font-size: 13px; text-align: center; color: #555;}
 .player .statistics .bold{font-size: 16px; color: #ff5600;}
+.player .countdown{text-align: center; color: #1b1a1f;}
+.player .countdown .cd_number{margin: 0 2px; padding: 2px 8px; line-height: 25px; font-size: 15px; color: #fff; background-color: #ff7800; border-radius: 5px;}
+
+.player_list{padding: 20px; background-color: #fff; border-bottom: 1px solid #eee;}
 
 /*小屏幕*/
 @media (max-width: 320px){
@@ -28,12 +33,11 @@
 
 /*平板等大屏*/
 @media (min-width: 720px){
-	.top{font-size: 18px;}
 	.top .calling{padding-top: 5px; font-size: 22px;}
 	.top .calling .icon_click{left: 38%; top: 3px; background-position: -4px -256px; width: 40px; height: 40px;}
 
 	.pro .image{width: 95px; height: 95px;}
-	.pro .right_con{margin-left: 105px; font-size: 18px;}
+	.pro .right_con{margin-left: 105px;}
 	.pro .right_con .title{min-height: 54px; max-height: 54px; font-size: 19px;}
 	.pro .right_con .sec_bottom .real_price .bold{font-size: 21px;}
 }

@@ -23,14 +23,12 @@
 
 @media (min-width: 720px) {
 	/*精品推荐图片*/
-	.rec_pro .tip{top: 26px; left: -30px; width: 152px; height: 42px; line-height: 42px; font-size: 18px;}
+	.rec_pro .tip{top: 26px; left: -30px; width: 152px; height: 42px; line-height: 42px;}
 	.rec_pro .new_tip{background-position: 0 -144px;}
 	.rec_pro .hot_tip{background-position: 0 -206px;}
 	
 	/*精品推荐描述*/
-	.rec_pro .describe{font-size: 18px;}
 	.rec_pro .describe .title{font-size: 20px;}
-	.rec_pro .describe .title .title_tip{font-size: 18px;}
 	.rec_pro .describe .detail{max-height: 50px; line-height: 25px;}
 
 	/*价格及已售数量*/

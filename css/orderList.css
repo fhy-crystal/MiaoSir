@@ -31,7 +31,7 @@
 	.con_item .item .top .time{font-size: 19px;}
 	.con_item .item .top .state{font-size: 20px;}
 	.con_item .item .middle .image{width: 120px; height: 120px;}
-	.con_item .item .middle .right_con{margin-left: 135px; font-size: 18px;}
+	.con_item .item .middle .right_con{margin-left: 135px;}
 	.con_item .item .middle .right_con .title{min-height: 54px; max-height: 54px; font-size: 19px;}
 	.con_item .item .middle .right_con .sec_bottom .real_price .bold{font-size: 21px;}
 	.con_item .item .bottom{font-size: 20px;}

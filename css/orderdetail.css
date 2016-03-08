@@ -36,20 +36,15 @@
 	.title{font-size: 21px;}
 
 	/*商品描述*/
-	.describe{max-height: 50px; line-height: 25px; overflow: hidden; font-size: 18px;}
+	.describe{max-height: 50px; line-height: 25px; overflow: hidden;}
 
 	/*状态*/
-	.state{font-size: 18px;}
 	.price .bold{font-size: 24px;}
 
 	/*购买按钮*/
-	.btn_buy{font-size: 18px;}
 	.btn_buy.single_btn{font-size: 24px;}
 	.btn_buy .bold{font-size: 24px;}
 
-	/*说明*/
-	.ex_buy{font-size: 18px;}
-	.ex_deliver{font-size: 18px;}
 
 	/*查看详情*/
 	.more{font-size: 21px;}

@@ -29,11 +29,9 @@
 	/*公告*/
 	.announce .icon_announce{top: 4px; left: 11px; width: 34px; height: 34px; background-position: -2px -106px;}
 	.announce #announce_txt{padding-left: 55px;}
-	.announce #announce_txt a{font-size: 18px;}
 
 	/*精品推荐*/
 	.recommend .rec_title .title{font-size: 20px;}
-	.recommend .rec_title .more{font-size: 18px;}
 
 	.recommend .rec_product .pro_lg .pro_img{width: 117px;}
 }

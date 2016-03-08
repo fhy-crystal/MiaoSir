@@ -63,6 +63,8 @@ a:hover, a:focus{text-decoration: none;}
 
 /*平板等大屏*/
 @media (min-width: 720px) {
+	html,body{font-size: 18px;}
+	.tab_item{font-size: 12px;}
 	.icon{background-size: 500px 500px;}
 	.pro_title{font-size: 20px;}
 	.pro_describe{font-size: 18px;}
