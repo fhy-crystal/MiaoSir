@@ -1,45 +1,55 @@
 /*号召*/
-.top{position: relative; width: 100%; height: 70px; text-align: center; background-color: #fff;}
-.top .calling{padding: 13px 0 6px 10px; font-size: 16px; color: #3bc02f;}
-.top .calling .icon_click{position: absolute; top: 15px; left: 35%; background-position: -2px -128px; width: 20px; height: 20px;}
+.top{position: relative; width: 100%; height: 6.5rem; text-align: center; background-color: #fff;}
+.top .calling{padding: 1.5rem 0 0.6rem 1rem; font-size: 1.6rem; color: #3bc02f;}
+.top .calling .icon_click{position: absolute; top: 1.7rem; left: 35%; background-position: -2px -128px; width: 2rem; height: 2rem;}
+.top .last_one{font-size: 1.2rem;}
 
 /*团购商品*/
-.pro{padding: 15px 10px; background-color: #fff; border-top: 1px solid #eee; border-bottom: 1px solid #eee;}
-.pro .image{position: absolute; width: 70px; height: 70px;}
+.pro{padding: 1rem; background-color: #fff; border-top: 1px solid #eee; border-bottom: 1px solid #eee;}
+.pro .image{position: absolute; width: 7rem; height: 7rem;}
 .pro .image img{width: 100%;}
-.pro .right_con{margin-left: 80px;}
-.pro .right_con .title{margin-bottom: 15px; min-height: 36px; max-height: 36px; overflow: hidden; font-size: 13px; color: #555;}
-.pro .right_con .sec_middle{margin-bottom: 7px; color: #999;}
+.pro .right_con{margin-left: 8rem;}
+.pro .right_con .title{margin-bottom: 2.3rem; min-height: 3rem; max-height: 3rem; overflow: hidden; font-size: 1.3rem; color: #555;}
+.pro .right_con .sec_middle{margin-bottom: 0.7rem; color: #999;}
 .pro .right_con .sec_middle .unit_price{float: right;}
 .pro .right_con .sec_bottom .price{color: #999;}
-.pro .right_con .sec_bottom .price .bold{font-size: 15px; color: #ff5600;}
+.pro .right_con .sec_bottom .price .bold{font-size: 1.5rem; color: #ff5600;}
 
 /*图购人列表*/
-.player{padding: 20px; background-color: #fff; border-bottom: 1px solid #eee;}
+.player{padding: 1rem; background-color: #fff; border-bottom: 1px solid #eee;}
 .player .player_head{float: left; margin: 0 2.5%; width: 15%;}
 .player .player_head img{width: 100%; border-radius: 100%;}
 .player .player_head:first-child img{border: 1px solid #ff5600;}
-.player .statistics{margin: 15px 0 10px; font-size: 13px; text-align: center; color: #555;}
-.player .statistics .bold{font-size: 16px; color: #ff5600;}
-.player .countdown{text-align: center; color: #1b1a1f;}
-.player .countdown .cd_number{margin: 0 2px; padding: 2px 8px; line-height: 25px; font-size: 15px; color: #fff; background-color: #ff7800; border-radius: 5px;}
+.player .statistics{margin: 1rem 0 1rem; font-size: 1.3rem; text-align: center; color: #555;}
+.player .statistics .bold{font-size: 1.6rem; color: #ff5600;}
+.player .countdown{text-align: center; font-size: 1.2rem; color: #1b1a1f;}
+.player .countdown .cd_number{margin: 0 0.2rem; padding: 0.2rem 0.8rem; line-height: 2.5rem; font-size: 1.5rem; color: #fff; background-color: #ff7800; border-radius: 5px;}
 
-.player_list{padding: 20px; background-color: #fff; border-bottom: 1px solid #eee;}
+.player_list{padding: 1rem; margin-bottom: 5px; background-color: #fff; border-bottom: 1px solid #eee;}
+.player_list .list_item{position: relative; margin-bottom: 1rem;}
+.player_list .list_item:after{content: ' '; position: absolute; top: 3.5rem; left: 1.9rem; z-index: 1; width: 2px; height: 1.5rem; background-color: #999;}
+.player_list .list_item:last-child:after{content: none;}
+.player_list .list_item img{position: relative; z-index: 2; margin-right: 0.3rem; width: 4rem; border-radius: 100%;}
+.player_list .list_item.leader img{border: 1px solid #ff5600;}
+.player_list .list_item .list_name{font-size: 1.3rem; color: #555;}
+.player_list .list_item .list_time{position: absolute; right: 0; top: 30%; font-size: 1.2rem; color: #999;}
 
-/*小屏幕*/
+/*我也要参团*/
+.join_block{position: fixed; left:50%; bottom: 0; transform:translate(-50%,0); z-index: 99; padding: 10px; width: 100%; text-align: center; font-size: 1.5rem; background-color: rgba(0,0,0,0.6);}
+.join_block .back_home{position: absolute; left: 10px; padding: 1.5rem; display: inline-block; background-color: #fff; border-radius: 5px;}
+.join_block .share{position: absolute; left: 18%; padding: 1.5rem; display: inline-block; background-color: #fff; border-radius: 5px;}
+.join_block .share .icon_share{background-position: -44px -127px; width: 26px; height: 25px;}
+.join_block .join{margin-left: 36%; display: inline-block; padding: 20px 0; width: 64%; color: #fff; background-color: #3bc02f; border-radius: 5px;}
+
+/*iPhone4等小屏幕*/
 @media (max-width: 320px){
 	.top .calling .icon_click{left: 32%;}
 }
 
 /*平板等大屏*/
 @media (min-width: 720px){
-	.top .calling{padding-top: 5px; font-size: 22px;}
-	.top .calling .icon_click{left: 38%; top: 3px; background-position: -4px -256px; width: 40px; height: 40px;}
-
-	.pro .image{width: 95px; height: 95px;}
-	.pro .right_con{margin-left: 105px;}
-	.pro .right_con .title{min-height: 54px; max-height: 54px; font-size: 19px;}
-	.pro .right_con .sec_bottom .real_price .bold{font-size: 21px;}
+	.top .calling .icon_click{left: 37%; top: 22px; background-position: -4px -256px; width: 40px; height: 40px;}
+	.pro .right_con .title{margin-bottom: 1.5rem; min-height: 3.6rem; max-height: 3.6rem;}
 }
 
 

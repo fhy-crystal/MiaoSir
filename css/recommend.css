@@ -2,35 +2,32 @@
 /*精品推荐图片*/
 .rec_pro img{width: 100%;}
 .rec_pro .soldout{position: absolute; width: 98%; z-index: 3;}
-.rec_pro .tip{position: absolute; top: 12px; left: -15px; z-index: 5; width: 76px; height: 21px; line-height: 21px; text-align: center; font-size: 12px; color: #fff; transform: rotate(-45deg);}
+.rec_pro .tip{position: absolute; top: 12px; left: -15px; z-index: 5; width: 76px; height: 21px; line-height: 21px; text-align: center; font-size: 1.2rem; color: #fff; transform: rotate(-45deg);}
 .rec_pro .new_tip{background-position: 0 -72px;}
 .rec_pro .hot_tip{background-position: 0 -103px;}
 /*精品推荐描述*/
 .rec_pro .describe{padding: 5px;}
-.rec_pro .describe .title{margin-bottom: 10px; font-size: 14px; font-weight: bold; color: #000;}
-.rec_pro .describe .title .title_tip{margin-right: 5px; padding: 2px 5px; font-size: 12px; font-weight: normal; color: #fff; border-radius: 3px;}
+.rec_pro .describe .title{margin-bottom: 10px; font-size: 1.4rem; font-weight: bold; color: #000;}
+.rec_pro .describe .title .title_tip{margin-right: 5px; padding: 2px 5px; font-size: 1.2rem; font-weight: normal; color: #fff; border-radius: 3px;}
 .rec_pro .describe .title .group{background-color: #ff5600;}
 .rec_pro .describe .title .presell{background-color: #ffb400;}
-.rec_pro .describe .detail{margin-bottom: 15px; max-height: 30px; line-height: 15px; color: #999; overflow: hidden;}
+.rec_pro .describe .detail{margin-bottom: 15px; font-size: 1.2rem; max-height: 30px; line-height: 15px; color: #999; overflow: hidden;}
 .rec_pro .describe .detail .explain{color: #b99e8d;}
 /*价格及已售数量*/
-.rec_pro .describe .state{padding: 15px 0; border-top: 1px solid #eee;}
-.rec_pro .describe .state{color: #999;}
-.rec_pro .describe .state .price_num{font-size: 14px; font-weight: bold; color: #ff5600;}
+.rec_pro .describe .state{padding: 15px 0; font-size: 1.2rem; color: #999; border-top: 1px solid #eee;}
+.rec_pro .describe .state .price_num{font-size: 1.5rem; font-weight: bold; color: #ff5600;}
 .rec_pro .describe .state del{margin-left: 7px;}
 .rec_pro .describe .sold{float: right; margin-top: 3px; color: #b99e8d;}
 
 
-@media (min-width: 720px) {
+/*平板等大屏*/
+@media (min-width: 721px) {
 	/*精品推荐图片*/
 	.rec_pro .tip{top: 26px; left: -30px; width: 152px; height: 42px; line-height: 42px;}
 	.rec_pro .new_tip{background-position: 0 -144px;}
 	.rec_pro .hot_tip{background-position: 0 -206px;}
 	
 	/*精品推荐描述*/
-	.rec_pro .describe .title{font-size: 20px;}
 	.rec_pro .describe .detail{max-height: 50px; line-height: 25px;}
 
-	/*价格及已售数量*/
-	.rec_pro .describe .state .price_num{font-size: 20px;}
 }
