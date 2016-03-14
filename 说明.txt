@@ -1,4 +1,9 @@
-font-size
-12------18
-14------20
-18------24
+主页：home
+分类：classify
+拼团：recommend
+订单：orderList
+组团购买：orderdetail_group
+单品购买：orderdetail_single
+我要参团：groupDetail（未引用）
+参团成功：groupDetail_1
+参团失败：groupDetail_0

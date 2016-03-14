@@ -1,11 +1,11 @@
 /*号召*/
-.top{position: relative; width: 100%; height: 6.5rem; text-align: center; background-color: #fff;}
-.top .calling{padding: 1.5rem 0 0.6rem 1rem; font-size: 1.6rem; color: #3bc02f;}
-.top .calling .icon_click{position: absolute; top: 1.7rem; left: 35%; background-position: -2px -128px; width: 2rem; height: 2rem;}
-.top .last_one{font-size: 1.2rem;}
+.top{position: relative; padding: 1rem 0; width: 100%; text-align: center; background-color: #fff;}
+.top .calling{font-size: 1.6rem; color: #3bc02f;}
+.top .calling .icon_click{position: absolute; top: 1.2rem; left: 34%; background-position: -2px -128px; width: 2rem; height: 2rem;}
+.top .last_one{margin-top: 10px; font-size: 1.2rem;}
 
 /*团购商品*/
-.pro{padding: 1rem; background-color: #fff; border-top: 1px solid #eee; border-bottom: 1px solid #eee;}
+.pro{position: relative; padding: 1rem; background-color: #fff; border-top: 1px solid #eee; border-bottom: 1px solid #eee;}
 .pro .image{position: absolute; width: 7rem; height: 7rem;}
 .pro .image img{width: 100%;}
 .pro .right_con{margin-left: 8rem;}
@@ -14,6 +14,8 @@
 .pro .right_con .sec_middle .unit_price{float: right;}
 .pro .right_con .sec_bottom .price{color: #999;}
 .pro .right_con .sec_bottom .price .bold{font-size: 1.5rem; color: #ff5600;}
+.pro .icon_suc{position: absolute; top: 37px; right: 30px; background-position: -1px -155px; width: 54px; height: 54px;}
+.pro .icon_fail{position: absolute; top: 37px; right: 30px; background-position: -67px -155px; width: 54px; height: 54px;}
 
 /*图购人列表*/
 .player{padding: 1rem; background-color: #fff; border-bottom: 1px solid #eee;}
@@ -23,7 +25,7 @@
 .player .statistics{margin: 1rem 0 1rem; font-size: 1.3rem; text-align: center; color: #555;}
 .player .statistics .bold{font-size: 1.6rem; color: #ff5600;}
 .player .countdown{text-align: center; font-size: 1.2rem; color: #1b1a1f;}
-.player .countdown .cd_number{margin: 0 0.2rem; padding: 0.2rem 0.8rem; line-height: 2.5rem; font-size: 1.5rem; color: #fff; background-color: #ff7800; border-radius: 5px;}
+.player .countdown .cd_time{margin: 0 0.2rem; padding: 0.2rem 0.8rem; line-height: 2.5rem; font-size: 1.5rem; color: #fff; background-color: #ff7800; border-radius: 5px;}
 
 .player_list{padding: 1rem; margin-bottom: 5px; background-color: #fff; border-bottom: 1px solid #eee;}
 .player_list .list_item{position: relative; margin-bottom: 1rem;}
@@ -36,20 +38,32 @@
 
 /*我也要参团*/
 .join_block{position: fixed; left:50%; bottom: 0; transform:translate(-50%,0); z-index: 99; padding: 10px; width: 100%; text-align: center; font-size: 1.5rem; background-color: rgba(0,0,0,0.6);}
-.join_block .back_home{position: absolute; left: 10px; padding: 1.5rem; display: inline-block; background-color: #fff; border-radius: 5px;}
-.join_block .share{position: absolute; left: 18%; padding: 1.5rem; display: inline-block; background-color: #fff; border-radius: 5px;}
-.join_block .share .icon_share{background-position: -44px -127px; width: 26px; height: 25px;}
-.join_block .join{margin-left: 36%; display: inline-block; padding: 20px 0; width: 64%; color: #fff; background-color: #3bc02f; border-radius: 5px;}
+.join_block .join_btn{position: absolute; padding: 0.9rem; display: inline-block; background-color: #fff; border-radius: 5px;}
+.join_block .back_home{left: 10px;}
+.join_block .back_home .icon_home{background-position: 0 2px;}
+.join_block .share{left: 19.5%;}
+.join_block .share .icon_share{background-position: -42px -126px; width: 26px; height: 25px;}
+.join_block .join{display: inline-block; margin-left: 35%; padding: 1.3rem 0; width: 65%; color: #fff; background-color: #3bc02f; border-radius: 5px;}
+.join_block .new{display: inline-block; padding: 1.3rem 0; width: 100%; color: #fff; background-color: #3bc02f; border-radius: 5px;}
 
 /*iPhone4等小屏幕*/
 @media (max-width: 320px){
-	.top .calling .icon_click{left: 32%;}
+	.top .calling .icon_click{left: 31%;}
 }
 
 /*平板等大屏*/
 @media (min-width: 720px){
-	.top .calling .icon_click{left: 37%; top: 22px; background-position: -4px -256px; width: 40px; height: 40px;}
+	.pro .icon_suc{top: 28px; background-position: -3px -311px; width: 108px; height: 107px;}
+	.pro .icon_fail{top: 28px; background-position: -135px -311px; width: 108px; height: 107px;}
+
+	.top .calling .icon_click{left: 36%; top: 15px; background-position: -4px -256px; width: 40px; height: 40px;}
 	.pro .right_con .title{margin-bottom: 1.5rem; min-height: 3.6rem; max-height: 3.6rem;}
+
+	/*我也要参团*/
+	.join_block .join_btn{padding: 0.5rem; width: 100px;}
+	.join_block .share{left: 18.5%;}
+	.join_block .back_home .icon_home{background-size: 500px 500px; width: 50px; height: 50px;  background-position: -1px 4px;}
+	.join_block .share .icon_share{background-size: 500px 500px; width: 50px; height: 50px; background-position:  -82px -252px;}
 }
 
 

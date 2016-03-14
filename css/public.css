@@ -58,9 +58,9 @@ a:hover, a:focus{text-decoration: none;}
 /*拼团玩法*/
 .pro_explain{padding: 1rem 1.5rem; font-size: 1.5rem; color: #333; background-color: #fff;}
 .pro_explain .arrow{float: right;}
-.pro_explain ul{margin: 25px 0;}
+.pro_explain ul{margin: 25px 0 0;}
 .pro_explain .item{float: left; position: relative; width: 25%; text-align: left; color: #a1a1a1; font-size: 1.2rem;}
-.pro_explain .item span{margin-left: 25px; display: inline-block; width: 50px; line-height: 14px;}
+.pro_explain .item span{margin-left: 1.9rem; display: inline-block; line-height: 14px;}
 .pro_explain .item .num{position: absolute; top: 5px; margin-right: 5px; display: inline-block; width: 20px; height: 20px; line-height: 18px; text-align: center; font-style: normal; color: #a1a1a1; background-color: #fff; border: 1px solid #a1a1a1; border-radius: 100%;}
 .pro_explain .item.active{color: #ff5600;}
 .pro_explain .item.active .num{color: #fff; background-color: #ff5600; border: 0;}
