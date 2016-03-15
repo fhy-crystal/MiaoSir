@@ -45,9 +45,9 @@ a:hover, a:focus{text-decoration: none;}
 .tab{padding: 0 5%; width: 100%; position: fixed;left: 50%; bottom: 0; z-index: 999; -webkit-transform: translate(-50%, 0); height: 48px; border-top: 1px solid #eee;background-color: #fff;}
 .tab_item{margin-top: 3px; display: inline-block; width: 100%;}
 .icon_home{background-position: 0 -27px; width: 26px; height: 25px;}
-.icon_group{background-position: -41px -27px; width: 26px; height: 25px;}
+.icon_group{background-position: -41px -25px; width: 26px; height: 25px;}
 .icon_order{background-position: -82px -27px; width: 26px; height: 25px;}
-.icon_mine{background-position: -126px -27px; width: 26px; height: 25px;}
+.icon_mine{background-position: -126px -26px; width: 26px; height: 25px;}
 .icon_txt{margin-top: -5px; color: #999;}
 .active .icon_txt{color: #3bc02f;}
 .active .icon_home{background-position: 0 0;}

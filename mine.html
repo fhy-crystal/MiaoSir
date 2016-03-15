@@ -19,14 +19,60 @@
     <link rel="stylesheet" type="text/css" href="./css/mine.css">
 </head>
 <body>
-	<div class="container">
-		<div class="layout_750">
-			<div class="head center">
-				<img src="./img/user_captain.jpg" alt=" ">
-				<div class="name">美国队长</div>
-			</div>
-			<div class="order_list"></div>
+	<div class="layout_750">
+		<div class="head center">
+			<img src="./img/user_captain.jpg" alt=" ">
+			<div class="name">美国队长</div>
 		</div>
+        <!-- 我的订单 -->
+		<div class="order_list">
+            <div class="list_item">
+                <i class="icon icon_morder"></i>我的订单
+                <a href="./orderList.html" class="more">查看更多&gt;</a>
+            </div>
+            <ul>
+                <li class="item"><a href="./orderList.html#1"><p>1</p>待付款</a></li>
+                <li class="item"><a href="./orderList.html#2"><p>0</p>待发货</a></li>
+                <li class="item"><a href="./orderList.html#3"><p>1</p>待收货</a></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+
+        <!-- 我的拼团 -->
+        <a href="./home.html"><div class="list_item"><i class="icon icon_mgroup"></i>我的拼团</div></a>
+        <a href="./home.html"><div class="list_item"><i class="icon icon_mcoupon"></i>我的优惠券</div></a>
+        <a href="./home.html"><div class="list_item"><i class="icon icon_maddress"></i>我的地址</div></a>
+
+        <!-- 导航条 -->
+        <div class="tab">
+            <div class="row">
+                <div class="col-xs-3 center">
+                    <a class="tab_item" href="./home.html">
+                        <i class="icon icon_home"></i>
+                        <div class="icon_txt">喵舍</div>
+                    </a>
+                </div>
+                <div class="col-xs-3 center">
+                    <a class="tab_item" href="./recommend.html">
+                        <i class="icon icon_group"></i>
+                        <div class="icon_txt">拼团</div>
+                    </a>
+                </div>
+                <div class="col-xs-3 center">
+                    <a class="tab_item" href="./orderList.html">
+                        <i class="icon icon_order"></i>
+                        <div class="icon_txt">订单</div>
+                    </a>
+                </div>
+                <div class="col-xs-3 center">
+                    <a class="tab_item active" href="./mine.html">
+                        <i class="icon icon_mine"></i>
+                        <div class="icon_txt">我的</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- /导航条 -->
 	</div>
 </body>
 </html>
