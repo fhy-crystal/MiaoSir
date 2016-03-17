@@ -1,0 +1,43 @@
+/*地址*/
+.address a{padding: 25px 10px; display: inline-block; width: 100%; font-size: 1.3rem; color: #333; background: #fff;}
+
+/*团购商品*/
+.pro{margin: 15px 0; background-color: #fff;}
+.pro .middle{padding: 15px 10px; border-top: 1px solid #eee; border-bottom: 1px solid #eee;}
+.pro .middle .image{position: absolute; width: 7rem; height: 7rem;}
+.pro .middle .image img{width: 100%;}
+.pro .middle .right_con{margin-left: 95px;}
+.pro .middle .right_con .title{margin-bottom: 10px; min-height: 36px; max-height: 36px; overflow: hidden; font-size: 1.3rem; color: #555;}
+.pro .middle .right_con .sec_middle{margin-bottom: 7px; font-size: 1.2rem; color: #999;}
+.pro .middle .right_con .sec_middle .unit_price{float: right;}
+.pro .middle .right_con .sec_bottom{font-size: 1.2rem; color: #999;}
+.pro .bottom{padding: 10px; font-size: 1.4rem;}
+.pro .bottom .btm_left,.pro .bottom .btm_right{display: inline-block;}
+.pro .bottom .btm_right{float: right;}
+.pro .bottom .btm_left li{margin-bottom: 5px; font-size: 1.1rem; color: #555;}
+.pro .bottom .btm_right li{margin-bottom: 5px; font-size: 1.1rem; text-align: right; color: #555;}
+.pro .bottom .btm_right .bold{font-size: 1.5rem; color: #ff5600;}
+
+.method{padding: 15px 10px; background-color: #fff;}
+.method .m_title{font-size: 1.3rem; color: #555;}
+.method .buy_now{display: inline-block; margin-top: 10px; padding: 10px 0; width: 100%; font-size: 1.5rem; text-align: center; color: #fff; background-color: #ff5600; border-radius: 5px;}
+
+
+
+
+@media (min-width: 721px){
+	.pro .middle .image{width: 8rem; height: 8rem;}
+	.pro .middle .right_con{margin-left: 135px;}
+	.pro .middle .right_con .title{min-height: 54px; max-height: 54px;}
+}
+
+
+
+
+
+
+
+
+
+
+
