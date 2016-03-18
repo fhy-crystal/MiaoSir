@@ -1,0 +1,32 @@
+.item{background-color: #fff;}
+.item{position: relative; margin-bottom: 5px; background-color: #fff;}
+.item .middle{padding: 15px 10px; border-bottom: 1px solid #eee;}
+.item .middle .image{position: absolute; width: 7rem; height: 7rem;}
+.item .middle .image img{width: 100%;}
+.item .middle .right_con{margin-left: 95px;}
+.item .middle .right_con .title{margin-bottom: 10px; min-height: 36px; max-height: 36px; overflow: hidden; font-size: 1.3rem; color: #555;}
+.item .middle .right_con .sec_middle{display: inline-block; margin-bottom: 7px; padding: 10px 20px; font-size: 1.2rem; color: #fff; border-radius: 20px; background-color: #3bc02f;}
+.item .bottom{padding: 10px; font-size: 1.4rem; overflow: hidden;}
+.item .bottom 
+.item .bottom .button{float: right; display: inline-block; padding: 7px 15px; color: #ff5600; border: 1px solid #ff5600; border-radius: 5px;}
+.item .bottom .button:last-child{margin-right: 10px;}
+.item .bottom .button.disable{color: #fff; background-color: #ccc; border: 1px solid #eee;}
+
+
+
+@media (min-width: 720px){
+	.item .middle .image{width: 8rem; height: 8rem;}
+	.item .middle .right_con{margin-left: 135px;}
+	.item .middle .right_con .title{min-height: 54px; max-height: 54px;}
+}
+
+
+
+
+
+
+
+
+
+
+

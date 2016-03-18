@@ -2,8 +2,11 @@
 分类：classify
 拼团：recommend
 订单：orderList
-组团购买：orderdetail_group
-单品购买：orderdetail_single
+个人中心:mine
+组团购买：orderDetail_group
+单品购买：orderDetail_single
 我要参团：groupDetail（未引用）
 参团成功：groupDetail_1
 参团失败：groupDetail_0
+订单详情：orderMsg
+支付页面：pay

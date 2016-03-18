@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>喵舍尝鲜馆-订单详情</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="./css/normalize3.0.2.css">
+    <link rel="stylesheet" type="text/css" href="./css/public.css">
+    <link rel="stylesheet" type="text/css" href="./css/orderMsg.css">
+</head>
+<body>
+    <div class="layout_750">
+        <!-- 物流状态 -->
+        <div class="state">
+            <ul>
+                <li class="item active"><i class="icon icon_submit"></i><div>提交订单</div></li>
+                <li class="item active"><i class="icon icon_deliver"></i><div>配送中</div></li>
+                <li class="item"><i class="icon icon_sign"></i><div>签收成功</div></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+
+        <!-- 订单信息 -->
+        <div class="message">
+            <div class="message_title">订单信息</div>
+            <div class="message_block">
+                <div class="middle">
+                    <div class="image">
+                        <img src="./img/order_img1.jpg" alt=" ">
+                    </div>
+                    <div class="right_con">
+                        <div class="title">金艳猕猴桃12只装 单果重量约80 金艳猕猴桃12只装 单果重量约80</div>
+                        <div class="sec_middle">
+                            <span class="amount">数量：1</span>
+                            <span class="unit_price">&yen;17.90/件</span>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="sec_bottom">
+                            <span>库存：1244件</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <ul class="btm_left">
+                        <li>优惠券:</li>
+                        <li>运费:</li>
+                        <li>实付:</li>
+                    </ul>
+                    <ul class="btm_right">
+                        <li>-&yen;5.00</li>
+                        <li>&yen;0.00</li>
+                        <li class="bold">&yen;12.90</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 用户信息 -->
+            <div class="person_msg">
+                <ul>
+                    <li><span class="msg_title">订单状态：</span><span class="msg_con orange">已提交</span></li>
+                    <li><span class="msg_title">总额：</span><span class="msg_con orange">12.9</span></li>
+                    <li><span class="msg_title">收货人：</span><span class="msg_con">老王</span></li>
+                    <li><span class="msg_title">电话：</span><span class="msg_con">13766665262</span></li>
+                    <li><span class="msg_title">收货地址：</span><span class="msg_con">杭州市滨江区江虹路611号上峰电商产业园1号楼</span class="msg_con"></li>
+                    <li><span class="msg_title">订单编号：</span><span class="msg_con">710199594442</span></li>
+                    <li><span class="msg_title">下单时间：</span><span class="msg_con">2016-03-18 15:26</span></li>
+                </ul>
+            </div>
+
+            <div class="end"></div>
+        </div>
+    </div>
+</body>
+</html>

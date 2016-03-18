@@ -1,0 +1,73 @@
+/*物流状态*/
+.state{padding: 2rem; background-color: #fff;}
+.state .item{position: relative; float: left; width: 33.333333333%; font-size: 1.2rem; text-align: center; color: #bbb;}
+.state .item:after{content: ' '; position: absolute; top: 2rem; left: -4rem; z-index: 1; display: inline-block; width: 8rem; height: 2px; background-color: #bbb;}
+.state .item:first-child:after{content: none;}
+.state .active{color: #26cb00;}
+.state .active:after{background-color: #26cb00;}
+.state .icon{position: relative; z-index: 2; width: 50px; height: 50px;}
+.state .icon_submit{background-position: -201px -1px;}
+.state .icon_deliver{background-position: -201px -51px;}
+.state .icon_sign{background-position: -201px -101px;}
+.state .active .icon_submit{background-position: -151px -1px;}
+.state .active .icon_deliver{background-position: -151px -51px;}
+.state .active .icon_sign{background-position: -151px -101px;}
+
+/*订单信息*/
+.message .message_title{padding: 1rem 10px; font-size: 1.3rem; color: #555;}
+.message_block{position: relative; margin-bottom: 5px; background-color: #fff;}
+.message_block .middle{padding: 15px 10px; border-bottom: 1px solid #eee;}
+.message_block .middle .image{position: absolute; width: 7rem; height: 7rem;}
+.message_block .middle .image img{width: 100%;}
+.message_block .middle .right_con{margin-left: 95px;}
+.message_block .middle .right_con .title{margin-bottom: 10px; min-height: 36px; max-height: 36px; overflow: hidden; font-size: 1.3rem; color: #555;}
+.message_block .middle .right_con .sec_middle{margin-bottom: 7px; font-size: 1.2rem; color: #999;}
+.message_block .middle .right_con .sec_middle .unit_price{float: right;}
+.message_block .middle .right_con .sec_bottom{font-size: 1.2rem; color: #999;}
+.message_block .bottom{padding: 10px; font-size: 1.4rem;}
+.message_block .bottom .btm_left,.pro .bottom .btm_right{display: inline-block;}
+.message_block .bottom .btm_right{float: right;}
+.message_block .bottom .btm_left li{margin-bottom: 5px; font-size: 1.1rem; color: #555;}
+.message_block .bottom .btm_right li{margin-bottom: 5px; font-size: 1.1rem; text-align: right; color: #555;}
+.message_block .bottom .btm_right .bold{font-size: 1.5rem; color: #ff5600;}
+
+/*用户信息*/
+.person_msg{padding: 10px; color: #555; background-color: #fff;}
+.person_msg li{position: relative; margin-bottom: 5px; font-size: 1.1rem;}
+.person_msg .msg_title{position: absolute; top: 0; left: 0;}
+.person_msg .msg_con{display: inline-block; margin-left: 20%; width: 80%;}
+
+
+@media (min-width: 720px){
+	.state .item:after{top: 3.5rem;}
+	.state .icon{width: 100px; height: 100px;}
+	.state .icon_submit{background-position: -403px 0;}
+	.state .icon_deliver{background-position: -403px -101px;}
+	.state .icon_sign{background-position: -403px -201px;}
+	.state .active .icon_submit{background-position: -301px 0;}
+	.state .active .icon_deliver{background-position: -301px -101px;}
+	.state .active .icon_sign{background-position: -301px -201px;}
+
+	.message_block .middle .image{width: 8rem; height: 8rem;}
+	.message_block .middle .right_con{margin-left: 135px;}
+	.message_block .middle .right_con .title{min-height: 54px; max-height: 54px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
