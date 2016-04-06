@@ -44,11 +44,13 @@
 .join_block .share{left: 19.5%;}
 .join_block .share .icon_share{background-position: -42px -126px; width: 26px; height: 25px;}
 .join_block .join{display: inline-block; margin-left: 35%; padding: 1.3rem 0; width: 65%; color: #fff; background-color: #3bc02f; border-radius: 5px;}
+.join_block .need{display: inline-block; margin-left: 15%; padding: 1.3rem 0; width: 85%; color: #fff; background-color: #3bc02f; border-radius: 5px;}
 .join_block .new{display: inline-block; padding: 1.3rem 0; width: 100%; color: #fff; background-color: #3bc02f; border-radius: 5px;}
 
 /*iPhone4等小屏幕*/
 @media (max-width: 320px){
 	.top .calling .icon_click{left: 31%;}
+	.join_block .need{margin-left: 20%; width: 80%;}
 }
 
 /*平板等大屏*/

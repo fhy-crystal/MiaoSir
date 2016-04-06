@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"><!--手机打开网页电话号码是否为拨打链接-->
+    <title>喵舍尝鲜馆-添加地址</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="./js/html5shiv.min.js"></script>
+      <script src="./js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="./css/normalize3.0.2.css">
+    <link rel="stylesheet" type="text/css" href="./css/public.css">
+    <link rel="stylesheet" type="text/css" href="./css/address_add.css">
+</head>
+<body>
+    <div class="layout_750">
+        <div class="title relative">收货地址</div>
+        <div class="content">
+            <ul>
+                <li>
+                    <p>收货人</p>
+                    <input type="textbox" placeholder="收货人姓名"></input>
+                </li>
+                <li>
+                    <p>手机号码</p>
+                    <input type="textbox" placeholder="收货人手机号"></input>
+                </li>
+                <li>
+                    <p>省份</p>
+                    <select id="s_province" name="s_province"></select>
+                </li>
+                <li>
+                    <p>城市</p>
+                    <select id="s_city" name="s_city" ></select>
+                </li>
+                <li>
+                    <p>区/县</p>
+                    <select id="s_county" name="s_county"></select>
+                </li>
+                <li>
+                    <p>详细地址</p>
+                    <input type="textbox" placeholder="详细地址"></input>
+                </li>
+            </ul>
+            <a class="confirm" href="./address.html">确定</a>
+        </div>
+        <div class="end"></div>
+    </div>
+
+    <script type="text/javascript" src="./js/area.js"></script>
+    <script type="text/javascript">
+        _init_area();
+        var Gid  = document.getElementById ;
+        var showArea = function(){
+            Gid('show').innerHTML = "<h3>" + Gid('s_province').value + " - " + 
+                                    Gid('s_city').value + " - " + 
+                                    Gid('s_county').value + "</h3>"
+        }
+        Gid('s_county').setAttribute('onchange','showArea()');
+    </script>
+</body>
+</html>

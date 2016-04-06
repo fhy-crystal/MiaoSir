@@ -5,8 +5,14 @@
 个人中心:mine
 组团购买：orderDetail_group
 单品购买：orderDetail_single
-我要参团：groupDetail（未引用）
+我要参团：groupDetail
 参团成功：groupDetail_1
 参团失败：groupDetail_0
 订单详情：orderMsg
 支付页面：pay
+我的地址：address
+
+
+
+
+加载页面：

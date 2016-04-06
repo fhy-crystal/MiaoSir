@@ -2,8 +2,9 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"><!--手机打开网页电话号码是否为拨打链接-->
     <title>喵舍尝鲜馆-支付</title>
 
     <!-- Bootstrap -->
@@ -11,8 +12,8 @@
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+      <script src="./js/html5shiv.min.js"></script>
+      <script src="./js/respond.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" type="text/css" href="./css/normalize3.0.2.css">
     <link rel="stylesheet" type="text/css" href="./css/public.css">
@@ -22,7 +23,7 @@
     <div class="layout_750">
         <!-- 选择地址 -->
         <div class="address">
-            <a href="">您还没有收货地址哦，点击新增地址</a>
+            <a href="./address_add.html">您还没有收货地址哦，点击新增地址</a>
         </div>
         <!-- /选择地址 -->
         
@@ -67,7 +68,7 @@
                 <i class="icon icon_wechat"></i>
                 微信支付
             </div>
-            <a href="" class="buy_now">立即支付</a>
+            <a href="./groupDetail_paid.html" class="buy_now">立即支付</a>
         </div>
         <!-- /支付 -->
         

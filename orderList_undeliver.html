@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="format-detection" content="telephone=no"><!--手机打开网页电话号码是否为拨打链接-->
-    <title>喵舍尝鲜馆-个人中心</title>
+    <title>喵舍尝鲜馆-订单</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
@@ -17,31 +17,26 @@
     <![endif]-->
     <link rel="stylesheet" type="text/css" href="./css/normalize3.0.2.css">
     <link rel="stylesheet" type="text/css" href="./css/public.css">
-    <link rel="stylesheet" type="text/css" href="./css/mine.css">
+    <link rel="stylesheet" type="text/css" href="./css/orderList.css">
 </head>
 <body>
-	<div class="layout_750">
-		<div class="head center">
-			<img src="./img/user_captain.jpg" alt=" ">
-			<div class="name">美国队长</div>
-		</div>
-        <!-- 我的订单 -->
-		<div class="order_list">
-            <div class="list_item">
-                <i class="icon icon_morder"></i>我的订单
-                <a href="./orderList.html" class="more">查看更多&gt;</a>
-            </div>
+    <div class="layout_750">
+        <div class="top_nav">
             <ul>
-                <li class="item"><a href="./orderList_unpay.html"><p>1</p>待付款</a></li>
-                <li class="item"><a href="./orderList_undeliver.html"><p>0</p>待发货</a></li>
-                <li class="item"><a href="./orderList_unreceive.html"><p>1</p>待收货</a></li>
+                <li class="item"><a href="./orderList.html">全部订单(3)</a></li>
+                <li class="item"><a href="./orderList_unpay.html">待付款(1)</a></li>
+                <li class="item active"><a href="./orderList_undeliver.html">待发货(0)</a></li>
+                <li class="item"><a href="./orderList_unreceive.html">待收货(1)</a></li>
                 <div class="clear"></div>
             </ul>
         </div>
-
-        <!-- 我的拼团 -->
-        <a href="./myGroup.html"><div class="list_item"><i class="icon icon_mgroup"></i>我的拼团</div></a>
-        <a href="./address.html"><div class="list_item"><i class="icon icon_maddress"></i>我的地址</div></a>
+        <div class="content">        
+            <!-- 待发货 -->            
+            <div class="con_item">
+                <div class="empty"><i class="icon icon_empty"></i>您没有相关订单</div>
+            </div>
+            <!-- /待发货 -->
+        </div>
 
         <!-- 导航条 -->
         <div class="tab">
@@ -59,13 +54,13 @@
                     </a>
                 </div>
                 <div class="col-xs-3 center">
-                    <a class="tab_item" href="./orderList.html">
+                    <a class="tab_item active" href="./orderList.html">
                         <i class="icon icon_order"></i>
                         <div class="icon_txt">订单</div>
                     </a>
                 </div>
                 <div class="col-xs-3 center">
-                    <a class="tab_item active" href="./mine.html">
+                    <a class="tab_item" href="./mine.html">
                         <i class="icon icon_mine"></i>
                         <div class="icon_txt">我的</div>
                     </a>
@@ -73,6 +68,8 @@
             </div>
         </div>
         <!-- /导航条 -->
-	</div>
+    </div>
 </body>
+<script type="text/javascript" src="./js/jquery.min-2.1.3.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
 </html>

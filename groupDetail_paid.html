@@ -21,12 +21,6 @@
 </head>
 <body>
     <div class="layout_750">
-        <!-- 号召 -->
-        <div class="top">
-            <div class="calling">本团已结束</div>
-        </div>
-        <!-- /号召 -->
-        
         <!-- 团购商品 -->
         <div class="pro">
             <div class="image">
@@ -38,7 +32,6 @@
                     <span class="price">五人团：<span class="bold">&yen;17.9</span>/件</span>
                 </div>
             </div>
-            <div class="icon icon_fail"></div>
         </div>
         <!-- /团购商品 -->
 
@@ -46,12 +39,14 @@
         <div class="player">
             <ul>
                 <li class="player_head"><img src="./img/user_captain.jpg" alt=" "></li>
-                <li class="player_head"><img src="./img/user_iron.jpg" alt=" "></li>
+                <li class="player_head"><img src="./img/user_empty.jpg" alt=" "></li>
                 <li class="player_head"><img src="./img/user_empty.jpg" alt=" "></li>
                 <li class="player_head"><img src="./img/user_empty.jpg" alt=" "></li>
                 <li class="player_head"><img src="./img/user_empty.jpg" alt=" "></li>
                 <div class="clear"></div>
             </ul>
+            <div class="statistics">还差<span class="bold">4</span>人，让小伙伴们快来组团吧！</div>
+            <div class="countdown">剩余<span class="cd_time"><span id="cd_hour">23</span>:<span id="cd_minute">59</span>:<span id="cd_second">59</span></span>结束</div>
         </div>
         <div class="player_list">
             <ul>
@@ -61,9 +56,8 @@
                     <span class="list_time">2015-11-15 17:21:19</span>
                 </li>
                 <li class="list_item">
-                    <img src="./img/user_iron.jpg" alt=" ">
-                    <span class="list_name">钢铁侠</span>
-                    <span class="list_time">2015-11-15 17:21:19</span>
+                    <img src="./img/user_empty.jpg" alt=" ">
+                    <span class="list_name">还差4人，让小伙伴快来组团吧！</span>
                 </li>
             </ul>
         </div>
@@ -76,8 +70,8 @@
                 <div>
                     <ul>
                         <li class="item active"><i class="num">1</i><span>选择<br/>心仪商品<span></li>
-                        <li class="item"><i class="num">2</i><span>支付开团<br/>或参团<span></li>
-                        <li class="item"><i class="num">3</i><span>邀请好友<br/>参团支付<span></li>
+                        <li class="item active"><i class="num">2</i><span>支付开团<br/>或参团<span></li>
+                        <li class="item active"><i class="num">3</i><span>邀请好友<br/>参团支付<span></li>
                         <li class="item"><i class="num">4</i><span>达到人数<br/>团购成功<span></li>
                         <div class="clear"></div>
                     </ul>
@@ -89,7 +83,10 @@
 
         <!-- 我也要参团 -->
         <div class="join_block">
-            <a class="new" href="./recommend.html">新开一个团，点此返回商品列表</a>
+            <a class="join_btn back_home" href="./home.html">
+                <i class="icon icon_home"></i>
+            </a>
+            <a class="need" href="./groupDetail.html">还差4人组团成功</a>
         </div>
         <!-- /我也要参团 -->
 

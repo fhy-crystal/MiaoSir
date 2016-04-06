@@ -1,0 +1,24 @@
+.add{padding: 0 10px; width: 100%; height: 4.4rem; font-size: 1.4rem; background-color: #efefef; border-bottom: 1px solid #c9c9c9;}
+.add span{line-height: 4.4rem;}
+.add_btn{position: absolute; top: 20%; right: 10px; padding: 5px 10px; display: inline-block; font-size: 1.2rem; color: #fff; background-color: #ff5600; border-radius: 5px;}
+
+.item{margin-bottom: 10px; padding: 10px; font-size: 1.2rem; background-color: #fff;}
+.item .tel{margin-left: 55px;}
+.item p{margin: 10px 0;}
+.item .item_btn{width: 100%;}
+.item .item_btn a{float: left; display: inline-block; padding: 5px 0; width: 49%; text-align: center; color: #fff; border-radius: 5px;}
+.item .item_btn .choose{margin-right: 2%; background-color: #ff5600;}
+.item .item_btn .edit{background-color: #10bd00;}
+
+
+
+
+
+
+
+
+
+
+
+
+

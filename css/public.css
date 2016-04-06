@@ -42,8 +42,8 @@ a:hover, a:focus{text-decoration: none;}
 
 
 /*导航条*/
-.tab{padding: 0 5%; width: 100%; position: fixed;left: 50%; bottom: 0; z-index: 999; -webkit-transform: translate(-50%, 0); height: 48px; border-top: 1px solid #eee;background-color: #fff;}
-.tab_item{margin-top: 3px; display: inline-block; width: 100%;}
+.tab{padding: 0 5%; width: 100%; position: fixed; left: 0; bottom: 0; z-index: 999; height: 48px; border-top: 1px solid #eee;background-color: #fff;}
+.tab_item{margin-top: 3px; display: inline-block; width: 100%; font-size: 1rem;}
 .icon_home{background-position: 0 -27px; width: 26px; height: 25px;}
 .icon_group{background-position: -41px -25px; width: 26px; height: 25px;}
 .icon_order{background-position: -82px -27px; width: 26px; height: 25px;}
@@ -69,7 +69,6 @@ a:hover, a:focus{text-decoration: none;}
 /*平板等大屏*/
 @media (min-width: 721px) {
 	html,body{font-size: 93.8%;}
-	.tab_item{font-size: 12px;}
 	.icon{background-size: 500px 500px;}
 
 	.icon_home{background-size: 250px 250px;}

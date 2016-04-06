@@ -7,7 +7,7 @@
 .item .middle .right_con .title{margin-bottom: 10px; min-height: 36px; max-height: 36px; overflow: hidden; font-size: 1.3rem; color: #555;}
 .item .middle .right_con .sec_middle{display: inline-block; margin-bottom: 7px; padding: 10px 20px; font-size: 1.2rem; color: #fff; border-radius: 20px; background-color: #3bc02f;}
 .item .bottom{padding: 10px; font-size: 1.4rem; overflow: hidden;}
-.item .bottom 
+.item .bottom .state{position: absolute; top: 30%;}
 .item .bottom .button{float: right; display: inline-block; padding: 7px 15px; color: #ff5600; border: 1px solid #ff5600; border-radius: 5px;}
 .item .bottom .button:last-child{margin-right: 10px;}
 .item .bottom .button.disable{color: #fff; background-color: #ccc; border: 1px solid #eee;}
