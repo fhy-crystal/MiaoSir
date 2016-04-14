@@ -22,6 +22,10 @@
 <body>
     <div class="container">
         <div class="layout_750">
+            <!-- 加载页面 -->
+            <div class="loader"></div>
+            <!-- /加载页面 -->
+
             <!-- 海报 -->
             <div class="row">
                 <div class="col-xs-12 no_padding_left no_padding_right">
@@ -399,6 +403,7 @@
 
     <script src="./js/jquery.min-2.1.3.js"></script>
     <script src="./js/TouchSlide.1.1.js"></script>
+    <script src="./js/loader.js"></script>
     <script type="text/javascript">
         //banner轮播
         TouchSlide({ 
@@ -410,6 +415,8 @@
             autoPlay:true //自动播放
         });
 
+        
+
         //文字滚动
         function AutoScroll(obj){
             $(obj).find("ul:first").animate({
@@ -420,6 +427,12 @@
             }
         $(document).ready(function(){
             setInterval('AutoScroll("#announce_txt")',3000);
+
+            //遮罩
+            $('.loader').loader({
+                timeToHide: 120000000,
+                type: "type_cir"
+            });
         });
     </script>
 </body>
