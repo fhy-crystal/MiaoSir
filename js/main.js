@@ -36,3 +36,13 @@ function timer(time){
 		time--;
 	},1000)
 }
+
+
+
+function AutoScroll(obj){
+    $(obj).find("ul:first").animate({
+        marginTop:"-40px"
+    },500,function(){
+        $(this).css({marginTop:"0px"}).find("li:first").appendTo(this);
+    });
+}

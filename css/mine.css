@@ -23,7 +23,7 @@
 
 
 /*平板等大屏*/
-@media (min-width: 721px) {
+@media (min-width: 720px) {
 	.order_list .icon_morder{background-position: -64px -99px; width: 38px; height: 44px;}
 	.icon_mgroup{background-position: -129px -99px; width: 38px; height: 44px;}
 	.icon_maddress{background-position: -257px -99px; width: 38px; height: 44px;}

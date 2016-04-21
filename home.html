@@ -405,32 +405,22 @@
     <script src="./js/TouchSlide.1.1.js"></script>
     <script src="./js/loader.js"></script>
     <script type="text/javascript">
-        //banner轮播
-        TouchSlide({ 
-            slideCell:"#slideBox",
-            titCell:".dots ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
-            mainCell:".banner ul", 
-            effect:"leftLoop", 
-            autoPage:true,//自动分页
-            autoPlay:true //自动播放
-        });
-
-        
-
-        //文字滚动
-        function AutoScroll(obj){
-            $(obj).find("ul:first").animate({
-                marginTop:"-40px"
-            },500,function(){
-                $(this).css({marginTop:"0px"}).find("li:first").appendTo(this);
-            });
-            }
         $(document).ready(function(){
+            //banner轮播
+            TouchSlide({ 
+                slideCell:"#slideBox",
+                titCell:".dots ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                mainCell:".banner ul", 
+                effect:"leftLoop", 
+                autoPage:true,//自动分页
+                autoPlay:true //自动播放
+            });
+            //文字滚动
             setInterval('AutoScroll("#announce_txt")',3000);
 
             //遮罩
             $('.loader').loader({
-                timeToHide: 120000000,
+                timeToHide: 1000,
                 type: "type_cir"
             });
         });

@@ -1,4 +1,4 @@
-html,body{min-width: 320px; font-size: 62.5%; background-color: #e8e8eb;}
+html,body{min-width: 320px; background-color: #e8e8eb;}
 .layout_750{margin: 0 auto; max-width: 750px;}
 .relative{position: relative;}
 .fl{float: left;}
@@ -30,6 +30,7 @@ a:hover, a:focus{text-decoration: none;}
 .end{height: 60px;}
 
 /*loader*/
+/*circle*/
 .type_cir {position: relative; width: 40px; height: 40px;}
 .container1 > div, .container2 > div, .container3 > div {position: absolute; width: 6px; height: 6px; background-color: #fff; border-radius: 100%; 
 															-webkit-animation: bouncedelay 1.2s infinite ease-in-out; 
@@ -84,6 +85,7 @@ a:hover, a:focus{text-decoration: none;}
   }
 }
 
+/*rectangle*/
 
 
 
@@ -131,9 +133,17 @@ a:hover, a:focus{text-decoration: none;}
 .pro_explain .item.active{color: #ff5600;}
 .pro_explain .item.active .num{color: #fff; background-color: #ff5600; border: 0;}
 
+/*小屏幕*/
+@media(max-width: 320px){
+	html,body{font-size: 62.5%;}
+}
+
+@media(min-width: 321px) and (max-width: 719px){
+	html,body{font-size: 62.5%;}
+}
 
 /*平板等大屏*/
-@media (min-width: 721px) {
+@media (min-width: 720px) {
 	html,body{font-size: 93.8%;}
 	.icon{background-size: 500px 500px;}
 

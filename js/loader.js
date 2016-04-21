@@ -41,13 +41,13 @@
 		_this.each(function(){
 			var typeTemp = settings.type;
 			switch(typeTemp){
-				case 'type_rec':
+				case 'type_rec'://当传入type_rec，则使用rectangle图案的loading
 					_this.html(type_rec);
 					break;
-				case'type_cir':
+				case'type_cir'://当传入type_cir，则使用circle图案的loading
 					_this.html(type_cir);
 					break;
-				default:
+				default://默认使用rectangle图案的loading
 					_this.html(type_rec);
 			}
 		});
@@ -63,11 +63,11 @@
 	 * @return {[type]} [description]
 	 */
 	function center(){
-		var winWidth = $(window).width();
-		var winHeight = $(window).height();
+		var winWidth = $(window).width();//计算窗口的宽度
+		var winHeight = $(window).height();//计算窗口的高度
 
-		var conWidth = $('.loader_type').outerWidth();
-		var conHeight = $('.loader_type').outerHeight();
+		var conWidth = $('.loader_type').outerWidth();//计算容器的宽度
+		var conHeight = $('.loader_type').outerHeight();//计算容器的高度
 
 		$('.loader_type').css({
 			'position': 'absolute',
@@ -76,10 +76,7 @@
 		});
 	}
 
-	// $(window).load(function() {
-	// 	center();
-	// });
-	$(document).ready(function() {
+	$(window).load(function() {
 		center();
 	});
 

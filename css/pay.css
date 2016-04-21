@@ -29,7 +29,7 @@
 
 
 
-@media (min-width: 721px){
+@media (min-width: 720px){
 	.pro .middle .image{width: 8rem; height: 8rem;}
 	.pro .middle .right_con{margin-left: 135px;}
 	.pro .middle .right_con .title{min-height: 54px; max-height: 54px;}

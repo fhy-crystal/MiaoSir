@@ -21,7 +21,7 @@
 
 
 /*平板等大屏*/
-@media (min-width: 721px) {
+@media (min-width: 720px) {
 	/*精品推荐图片*/
 	.rec_pro .tip{top: 26px; left: -30px; width: 152px; height: 42px; line-height: 42px;}
 	.rec_pro .new_tip{background-position: 0 -144px;}

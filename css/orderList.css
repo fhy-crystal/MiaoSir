@@ -27,7 +27,7 @@
 
 /*iPhone4等小屏幕*/
 
-@media (min-width: 721px){
+@media (min-width: 720px){
 	.con_item .item .middle .image{width: 8rem; height: 8rem;}
 	.con_item .item .middle .right_con{margin-left: 135px;}
 	.con_item .item .middle .right_con .title{min-height: 54px; max-height: 54px;}
