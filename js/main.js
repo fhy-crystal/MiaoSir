@@ -1,8 +1,3 @@
-$(document).ready(function() {
-	//参团倒计时
-	timer(86399);
-});
-
 /**
  * [timer 倒计时函数]
  * @param  {[type]} time [总秒数]
@@ -38,11 +33,25 @@ function timer(time){
 }
 
 
-
+/**
+ * 自动向上轮播
+ */
 function AutoScroll(obj){
     $(obj).find("ul:first").animate({
         marginTop:"-40px"
     },500,function(){
         $(this).css({marginTop:"0px"}).find("li:first").appendTo(this);
     });
+}
+
+/**
+ * setCookie
+ * 
+ */
+function setCookie(name,value)
+{
+	var Days = 30;
+	var exp = new Date();
+	exp.setTime(exp.getTime() + Days*24*60*60*1000);
+	document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
 }

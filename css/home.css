@@ -9,7 +9,7 @@
 .recommend .rec_title .title{margin-left: 1rem; font-size: 1.2rem; font-weight: bold; color: #555;}
 .recommend .rec_title .more{margin-right: 1rem; font-size: 1.2rem; color: #999;}
 
-.recommend .rec_product{margin-bottom: 1rem;}
+.recommend .rec_product{margin: 0.5rem 0;}
 .recommend .rec_product .pro_lg{padding: 1rem; background-color: #fff;}
 .recommend .rec_product .pro_lg .price{position: absolute; bottom: 10px; left: 15px;}
 .recommend .rec_product .pro_lg .pro_img{width: 8.7rem; border: 1px solid #f9f9f9;}
