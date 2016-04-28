@@ -14,7 +14,7 @@
 .state .active .icon_sign{background-position: -151px -101px;}
 
 /*订单信息*/
-.message .message_title{padding: 1rem 10px; font-size: 1.3rem; color: #555;}
+.message .message_title{padding: 1rem 10px; font-size: 1.3rem; color: #555; background-color: #dfdfdf;}
 .message_block{position: relative; margin-bottom: 5px; background-color: #fff;}
 .message_block .middle{padding: 15px 10px; border-bottom: 1px solid #eee;}
 .message_block .middle .image{position: absolute; width: 7rem; height: 7rem;}

@@ -22,6 +22,7 @@
 		//loader type
 		var type_rec = '<div class="loader_type type_rec"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div>';
 		var type_cir = '<div class="loader_type type_cir"><div class="loader_con container1"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="loader_con container2"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="loader_con container3"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div></div>'
+		var type_cir2 = '<div class="loader_type type_cir2"><div class="double_bounce1"></div><div class="double_bounce2"></div></div>';
 
 		//target
 		var _this = $(this);
@@ -46,6 +47,9 @@
 					break;
 				case'type_cir'://当传入type_cir，则使用circle图案的loading
 					_this.html(type_cir);
+					break;
+				case'type_cir2'://当传入type_cir2，则使用两个圆图案的loading
+					_this.html(type_cir2);
 					break;
 				default://默认使用rectangle图案的loading
 					_this.html(type_rec);

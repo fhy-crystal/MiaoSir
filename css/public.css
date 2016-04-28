@@ -1,4 +1,4 @@
-html,body{min-width: 320px; background-color: #e8e8eb;}
+html,body{min-width: 320px; background-color: #e3e3e3;}
 .layout_750{margin: 0 auto; max-width: 750px;}
 .relative{position: relative;}
 .fl{float: left;}
@@ -76,11 +76,7 @@ a:hover, a:focus{text-decoration: none;}
 }
 
 /*rectangle*/
-.type_rec{
-  width: 50px;
-  height: 30px;
-  text-align: center;
-}
+.type_rec{width: 50px; height: 30px; text-align: center; }
 
 .type_rec > div{background-color: #fff; height: 100%; width: 6px; margin-left:2px; display: inline-block;
 				 -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
@@ -105,6 +101,30 @@ a:hover, a:focus{text-decoration: none;}
   			   transform: scaleY(1.0);}
 }
 
+/*two circle*/
+.type_cir2 {width: 60px; height: 60px; position: relative;}
+ 
+.double_bounce1, .double_bounce2 {width: 100%; height: 100%; border-radius: 50%; background-color: #67CF22; opacity: 0.6; position: absolute; top: 0; left: 0;
+	-webkit-animation: bounce 2.0s infinite ease-in-out;
+			animation: bounce 2.0s infinite ease-in-out;
+}
+ 
+.double_bounce2 {-webkit-animation-delay: -1.0s; animation-delay: -1.0s; }
+ 
+@-webkit-keyframes bounce {
+  0%, 100% {-webkit-transform: scale(0.0);
+    				transform: scale(0.0);} 
+  50% {-webkit-transform: scale(1.0);
+    		transform: scale(1.0);}
+}
+
+@keyframes bounce {
+  0%, 100% {-webkit-transform: scale(0.0);
+    				transform: scale(0.0);} 
+  50% {-webkit-transform: scale(1.0);
+    		transform: scale(1.0);}
+}
+
 
 
 
@@ -127,7 +147,7 @@ a:hover, a:focus{text-decoration: none;}
 
 
 /*导航条*/
-.tab{padding: 0 5%; width: 100%; position: fixed; left: 0; bottom: 0; z-index: 999; height: 48px; border-top: 1px solid #eee;background-color: #fff;}
+.tab{position: fixed; left: 0; right: 0; bottom: 0; z-index: 999; margin: 0 auto; padding: 0 5%; width: 100%; height: 48px; border-top: 1px solid #eee;background-color: #fff;}
 .tab_item{margin-top: 3px; display: inline-block; width: 100%; font-size: 1rem;}
 .icon_home{background-position: 0 -27px; width: 26px; height: 25px;}
 .icon_group{background-position: -41px -25px; width: 26px; height: 25px;}
@@ -172,4 +192,8 @@ a:hover, a:focus{text-decoration: none;}
 	/*拼团玩法*/
 	.pro_explain .item span{margin-left: 50px; width: 100px; line-height: 20px;}
 	.pro_explain .item .num{top: 0; width: 40px; height: 40px; line-height: 40px;}
+}
+
+@media (min-width: 750px){
+	.tab{width: 750px;}
 }
