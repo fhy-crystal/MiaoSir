@@ -24,7 +24,7 @@
 .method .pay_way{font-size: 1.2rem; color: #555;}
 .method .icon_choose{position: relative; top: 4px; background-position: -81px -129px; width: 20px; height: 20px;}
 .method .icon_wechat{position: relative; top: 8px; background-position: -117px -127px; width: 27px; height: 27px;}
-.method .buy_now{display: inline-block; margin-top: 10px; padding: 10px 0; width: 100%; font-size: 1.5rem; text-align: center; color: #fff; background-color: #ff5600; border-radius: 5px;}
+.method .buy_now{display: inline-block; margin-top: 10px; padding: 10px 0; width: 100%; font-size: 1.5rem; text-align: center; color: #fff; background-color: #ff5600; border-radius: 5px; cursor: pointer;}
 
 
 

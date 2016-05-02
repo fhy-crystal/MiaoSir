@@ -21,40 +21,61 @@
 </head>
 <body>
     <div class="layout_750">
-        <div class="add relative">
+        <section class="add relative">
             <span>新增收货地址</span>
             <a class="add_btn" href="address_add.html">添加</a>
-        </div>
-        <div class="item">
-            <span class="name">美国队长</span>
-            <span class="tel">137582222828</span>
-            <p>浙江省 杭州市 滨江区 上峰电商产业园1号楼</p>
-            <div class="item_btn">
-                <a class="choose" href="./mine.html">选中</a>
-                <a class="edit" href="./address_edit.html">编辑</a>
-                <div class="clear"></div>
+        </section>
+        <section id="con">
+            <div class="item">
+                <span class="name">美国队长</span>
+                <span class="tel">137582222828</span>
+                <p>浙江省 杭州市 滨江区 上峰电商产业园1号楼</p>
+                <div class="item_btn">
+                    <a class="choose" href="./mine.html">选中</a>
+                    <a class="edit" href="./address_edit.html">编辑</a>
+                    <div class="clear"></div>
+                </div>
             </div>
-        </div>
-        <div class="item">
-            <span class="name">黑寡妇</span>
-            <span class="tel">137582222828</span>
-            <p>浙江省 杭州市 西湖区 蘑菇街1号楼</p>
-            <div class="item_btn">
-                <a class="choose" href="./mine.html">选中</a>
-                <a class="edit" href="./address_edit.html">编辑</a>
-                <div class="clear"></div>
+            <div class="item">
+                <span class="name">黑寡妇</span>
+                <span class="tel">137582222828</span>
+                <p>浙江省 杭州市 西湖区 蘑菇街1号楼</p>
+                <div class="item_btn">
+                    <a class="choose" href="./mine.html">选中</a>
+                    <a class="edit" href="./address_edit.html">编辑</a>
+                    <div class="clear"></div>
+                </div>
             </div>
-        </div>
-        <div class="item">
-            <span class="name">钢铁侠</span>
-            <span class="tel">137582222828</span>
-            <p>浙江省 杭州市 滨江区 网易1号楼</p>
-            <div class="item_btn">
-                <a class="choose" href="./mine.html">选中</a>
-                <a class="edit" href="./address_edit.html">编辑</a>
-                <div class="clear"></div>
+            <div class="item">
+                <span class="name">钢铁侠</span>
+                <span class="tel">137582222828</span>
+                <p>浙江省 杭州市 滨江区 网易1号楼</p>
+                <div class="item_btn">
+                    <a class="choose" href="./mine.html">选中</a>
+                    <a class="edit" href="./address_edit.html">编辑</a>
+                    <div class="clear"></div>
+                </div>
             </div>
-        </div>
+        </section>
     </div>
+    <script type="text/javascript" src="./js/jquery.min-2.1.3.js"></script>
+    <script type="text/javascript">
+        var postBody = JSON.parse(sessionStorage.getItem("item"));
+        var addHtml = "";
+        if (postBody) {
+            addHtml += "<div class=item>";
+            addHtml += "<span class='name'>" + postBody.name + "</span>";
+            addHtml += "<span class='tel'>" + postBody.tel + "</span>";
+            addHtml += "<p>" + postBody.address + "</p>";
+            addHtml += "<div class='item_btn'><a id='choose' class='choose'>选中</a><a id='edit' class='edit' href='./address_edit.html'>编辑</a><div class='clear'></div>";
+            addHtml += "</div>"
+            $("#con").append(addHtml);
+            //点击选中按钮
+            $("#choose").click(function() {
+                history.go(-1);
+            });
+        }
+        
+    </script>
 </body>
 </html>

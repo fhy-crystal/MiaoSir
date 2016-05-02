@@ -21,16 +21,18 @@
 </head>
 <body>
     <div class="layout_750">
-        <div class="title relative">收货地址</div>
-        <div class="content">
+        <section class="title relative">收货地址</section>
+        <section class="content">
             <ul>
                 <li>
                     <p>收货人</p>
-                    <input type="textbox" placeholder="收货人姓名" autofocus></input>
+                    <input id="add_name" type="textbox" placeholder="收货人姓名" autofocus></input>
+                    <label id="name_alert" class="alert-danger"></label>
                 </li>
                 <li>
                     <p>手机号码</p>
-                    <input type="textbox" placeholder="收货人手机号"></input>
+                    <input id="add_tel" type="textbox" placeholder="收货人手机号"></input>
+                    <label id="tel_alert" class="alert-danger"></label>
                 </li>
                 <li>
                     <p>省份</p>
@@ -46,24 +48,69 @@
                 </li>
                 <li>
                     <p>详细地址</p>
-                    <input type="textbox" placeholder="详细地址"></input>
+                    <input id="add_address" type="textbox" placeholder="详细地址"></input>
+                    <label id="address_alert" class="alert-danger"></label>
                 </li>
             </ul>
-            <a class="confirm" href="./address.html">确定</a>
-        </div>
-        <div class="end"></div>
+            <a id="add_submit" class="confirm">确定</a>
+        </section>
+        <section class="end"></section>
     </div>
 
+    <script type="text/javascript" src="./js/jquery.min-2.1.3.js"></script>
     <script type="text/javascript" src="./js/area.js"></script>
     <script type="text/javascript">
-        _init_area();
-        // var Gid  = document.getElementById;
-        // var showArea = function(){
-        //     Gid('show').innerHTML = "<h3>" + Gid('s_province').value + " - " + 
-        //                             Gid('s_city').value + " - " + 
-        //                             Gid('s_county').value + "</h3>"
-        // }
-        // Gid('s_county').setAttribute('onchange','showArea()');
+       $(document).ready(function() {
+            //省份选择
+            _init_area();
+            $("#add_submit").click(function() {
+                //获取表单内容
+                var name = $("#add_name").val();
+                var tel = $("#add_tel").val();
+                var province = $("#s_province").val();
+                var city = $("#s_city").val();
+                var county = $("#s_county").val()
+                var location = $("#add_address").val();
+                var address = province + city + county + location;
+                var postBody = {
+                    name: name,
+                    tel: tel,
+                    province: province,
+                    city: city,
+                    county: county,
+                    location: location,
+                    address: address
+                };
+                //判断收件人姓名是否为空
+                if(!name || name.length == 0){
+                    $("#name_alert").html("请输入收件人姓名").show();
+                    return;
+                } else {
+                    $("#name_alert").hide();
+                }
+                //判断手机号是否为空
+                var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;//手机号验证
+                if(!tel || tel.length == 0){
+                    $("#tel_alert").html("请输入手机号").show();
+                    return;
+                } else if (!myreg.test(tel)) {
+                    $("#tel_alert").html("请输入有效的手机号").show();
+                    return;
+                } else {
+                    $("#tel_alert").hide();
+                }
+                //判断地址是否为空
+                if(address == "-选择省--选择市--选择区/县-" || location.length == 0){
+                    $("#address_alert").html("请输入详细地址").show();
+                    return;
+                } else {
+                    $("#address_alert").hide();
+                }
+                sessionStorage.setItem("item", JSON.stringify(postBody));
+                history.go(-1);
+            });
+       });
+
     </script>
 </body>
 </html>

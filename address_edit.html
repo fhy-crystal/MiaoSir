@@ -21,16 +21,16 @@
 </head>
 <body>
     <div class="layout_750">
-        <div class="title relative">收货地址</div>
-        <div class="content">
+        <section class="title relative">收货地址</section>
+        <section class="content">
             <ul>
                 <li>
                     <p>收货人</p>
-                    <input type="textbox" placeholder="收货人姓名" autofocus></input>
+                    <input id="edit_name" type="textbox" placeholder="收货人姓名" autofocus></input>
                 </li>
                 <li>
                     <p>手机号码</p>
-                    <input type="textbox" placeholder="收货人手机号"></input>
+                    <input id="edit_tel" type="textbox" placeholder="收货人手机号"></input>
                 </li>
                 <li>
                     <p>省份</p>
@@ -46,25 +46,78 @@
                 </li>
                 <li>
                     <p>详细地址</p>
-                    <input type="textbox" placeholder="详细地址"></input>
+                    <input id="edit_address" type="textbox" placeholder="详细地址"></input>
                 </li>
             </ul>
-            <a class="edit_btn con" href="./address.html">确定</a>
-            <a class="edit_btn del" href="">删除</a>
-        </div>
-        <div class="end"></div>
+            <a id="edit_delete" class="edit_btn del">删除</a>
+            <a id="edit_comfirm" class="edit_btn con">确定</a>
+        </section>
+        <section class="end"></section>
     </div>
-
+    
+    <script type="text/javascript" src="./js/jquery.min-2.1.3.js"></script>
     <script type="text/javascript" src="./js/area.js"></script>
     <script type="text/javascript">
-        _init_area();
-        var Gid  = document.getElementById ;
-        var showArea = function(){
-            Gid('show').innerHTML = "<h3>" + Gid('s_province').value + " - " + 
-                                    Gid('s_city').value + " - " + 
-                                    Gid('s_county').value + "</h3>"
-        }
-        Gid('s_county').setAttribute('onchange','showArea()');
+        $(document).ready(function() {
+            //省份选择
+            _init_area();
+            var postBody = JSON.parse(sessionStorage.getItem("item"));
+            if (postBody) {
+                $("#edit_name").val(postBody.name);
+                $("#edit_tel").val(postBody.tel);
+                //点击确认按钮
+                $("#edit_comfirm").click(function() {
+                    var name = $("#edit_name").val();
+                    var tel = $("#edit_tel").val();
+                    var province = $("#s_province").val();
+                    var city = $("#s_city").val();
+                    var county = $("#s_county").val()
+                    var location = $("#edit_address").val();
+                    var address = province + city + county + location;
+                    postBody = {
+                        name: name,
+                        tel: tel,
+                        province: province,
+                        city: city,
+                        county: county,
+                        location: location,
+                        address: address
+                    };
+                    //判断收件人姓名是否为空
+                    if(!name || name.length == 0){
+                        $("#name_alert").html("请输入收件人姓名").show();
+                        return;
+                    } else {
+                        $("#name_alert").hide();
+                    }
+                    //判断手机号是否为空
+                    var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;//手机号验证
+                    if(!tel || tel.length == 0){
+                        $("#tel_alert").html("请输入手机号").show();
+                        return;
+                    } else if (!myreg.test(tel)) {
+                        $("#tel_alert").html("请输入有效的手机号").show();
+                        return;
+                    } else {
+                        $("#tel_alert").hide();
+                    }
+                    //判断地址是否为空
+                    if(address == "-选择省--选择市--选择区/县-" || location.length == 0){
+                        $("#address_alert").html("请输入详细地址").show();
+                        return;
+                    } else {
+                        $("#address_alert").hide();
+                    }
+                    sessionStorage.setItem("item", JSON.stringify(postBody));
+                    $(this).attr("href", "./address.html");
+                });
+                //点击删除按钮
+                $("#edit_delete").click(function() {
+                    sessionStorage.removeItem("item");
+                    $(this).attr("href", "./address.html");
+                });
+            }
+        });
     </script>
 </body>
 </html>
