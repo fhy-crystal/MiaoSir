@@ -21,7 +21,7 @@
 .poster img{width: 100%;}
 
 /*商品列表*/
-.pro_list{margin: 1rem 0 5rem 0;}
+.pro_list{margin: 0.5rem 0 5rem 0;}
 .pro_list .pro_list_item{margin-bottom: 0.5rem; padding: 1rem; background-color: #fff;}
 .pro_list .pro_list_item .pro_img{border: 1px solid #f9f9f9;}
 
